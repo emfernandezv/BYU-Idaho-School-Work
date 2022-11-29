@@ -1,0 +1,40 @@
+CSE 111 Proposal for a Student Chosen Program
+
+    (This is a proposal. All proposals are written with our best
+    knowledge at the beginning of a project. As we progress from the
+    beginning to the end of a project, we gain more knowledge, and we
+    change some of our proposed ideas. This is part of completing any
+    project and is fine.  However, we still must write a proposal so
+    that our teachers or supervisors know what we intend to do. Please
+    answer each of the following questions to the best of your
+    knowledge.)
+
+1. What is the title of your program?
+
+Currency Exchange App
+
+2. What real-world problem will your program address or help to solve?
+
+This program is mean to work as a currency exchange app that will allow users to quote a currency exchange (online?) and make the transfer directly without need 
+to attend to an in-person money exchange office or interact with a person. This is focused on persons that prefer online transactions/contactless. 
+
+3. What will you learn from developing this program?
+
+I'll learn to manage functions that allows to set an income earning margin on each transaction. 
+I have seen a similar app that also allows the user to "negociate" the exchange rate online.
+I will try to replicate the same functionality and try to add modules to log in, administrate information and the main functionality to store a "digital wallet".
+
+4. What Python modules will your program use?
+
+I will use CSV as a database host and  datetime to get transactions audit.
+At some point, I believe I am going to user some other modules but I will find out once i get there.
+
+5. Will you separate your Python program into functions that each
+perform a single task?
+
+Yes, I will have a function to host the menu and each interaction from there will be also invoked with other functions.
+
+6. Will you write test functions to test at least two of your program
+functions?
+
+It's very likely. I am not sure if the time will be enought since this is the modular class, But i will try to accomplish all.
