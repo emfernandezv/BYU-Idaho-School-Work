@@ -20,7 +20,7 @@ arrPlaces.push({ name:'Lima', strLenght:'29 years' });
 // Step 8: For each property, add appropriate values as strings
 arrPlaces.push({ name:'SLC', strLenght:'14 months' });
 // Step 9: Add additional objects with the same properties for each place you've lived
-arrPlaces.push({ name:'Kirkland', strLenght:'4 months' });
+arrPlaces.push({ name:'Kirkland', strLenght:'14 months' });
 
 /* OUTPUT */
 
