@@ -9,7 +9,7 @@ document.getElementById('sectionName').innerText = 'WDD 230: Assignment Portal';
 const aList = {
     lessons : [
         {   lessonNumber:'01',
-            lessonTitle:'Tittle 01',
+            lessonTitle:'W1 Activity: Applied JavaScript - CodePen',
             lessionPage: 'https://codepen.io/emfernandezv/pen/oNMYEom'
         } ,
         {   lessonNumber:'02',
