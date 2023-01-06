@@ -8,6 +8,10 @@ document.getElementById('sectionName').innerText = 'WDD 230: Assignment Portal';
 //Adding Section List
 const aList = {
     lessons : [
+        {   lessonNumber:'01',
+            lessonTitle:'Tittle 01',
+            lessionPage: 'https://codepen.io/emfernandezv/pen/oNMYEom'
+        } ,
         {   lessonNumber:'02',
             lessonTitle:'Tittle 02',
             lessionPage: ''
