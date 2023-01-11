@@ -1,88 +1,106 @@
 header{
-    background-color: #0066CC;
     display: grid;
-    grid-template-columns: 20vw auto;
+    grid-template-columns: repeat(8,1fr) ;
     align-content: center;
-    height: 12vw;
-    width: 40vw;
-    border-radius: 0.5vw;
-    box-shadow: 0 0 0.5vw black;
 }   
 
+.HeadBlueBox{
+    display: grid;
+    grid-template-columns: repeat(9,1fr) ;
+    background-color: #0066CC;
+    grid-column: 3/7;
+    border-radius: 0.5vw;
+    height: 12vw;
+    box-shadow: 0 0 0.5vw black;
+}
+
 .image {
+    grid-column: 3/5;
     height: 10vw;
-    margin-left: 6vw;
     border-radius: 0.5vw;
     box-shadow: 0 0 0.5vw black;
     opacity: 0.9;
+    margin-top: 1vw;
+    align-content: center;
+
 }
 
 .title {
-    padding-top: 3vw;
+    grid-column: 5/8;
     color: white;
     text-shadow: rgb(9, 9, 9) 1px 0 10px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 5vw;
+    text-align: center;
 }
 
 .sectionBlock {
     display: grid;
-    grid-template-columns: 10vw 18vw auto;
+    grid-template-columns: repeat(9,1fr) ;
     grid-template-rows: 3vw auto 3vw;
     
 }
 
 .sectionName {
-    grid-column: 2/3;
+    grid-column: 4/7;
     grid-row: 1/2;
     border-bottom: 1px solid;
     font-size: 1vw;
 }
 
 .list {
-    grid-column: 2/3;
+    grid-column: 4/7;
     grid-row: 2/3;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     line-height: 2;
     font-size: 0.8vw;
+    text-align: center;
 }
 
 .disclaimer {
-    grid-column: 2/3;
+    grid-column: 4/7;
     grid-row: 3/4;
     border-top: 1px solid;
     font-size: 0.55vw;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 
 h2{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: rgb(66, 65, 65) 1px 0 10px;
+    text-align: center;
 }
 
 footer{
-    grid-template-columns: 20vw auto;
-    background-color:#0066CC;
-    padding: 25px ;
-    height: 3vw;
+    grid-template-columns: repeat(8,1fr) ;
     display: grid;
-    justify-content: center;
     align-items: center;
-    width: 36vw;
-    grid-template-columns: auto;
-    grid-template-rows: 1vw 1vw;
-    color: white;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.FootBlueBox{
+    display: grid;
+    grid-template-columns: repeat(9,1fr) ;
+    background-color: #0066CC;
+    grid-column: 3/7;
     border-radius: 0.5vw;
+    height: 5vw;
     box-shadow: 0 0 0.5vw black;
+    color: white;
 }
 
 .f1 {
-    grid-column: 1/2;
+    grid-column: 3/9;
     grid-row: 1/2;
 }
 
 .f2 {
-    grid-column: 1/2;
+    grid-column: 3/9;
     grid-row: 2/3;
+}
+
+.FootBlueBox #pfooter,#date {
+    text-align: center;
 }
