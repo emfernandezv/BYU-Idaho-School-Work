@@ -1,0 +1,17 @@
+@media only screen and (min-width: 32.5em){
+    .HeadBlueBox{
+       border-radius: 0.5vw;
+       box-shadow: 0 0 0.5vw black;
+    }
+
+    .FootBlueBox{
+        border-radius: 0.5vw;
+        box-shadow: 0 0 0.5vw black;
+    }
+
+    .image {
+        border-radius: 0.5vw;
+        box-shadow: 0 0 0.5vw black;
+        opacity: 0.9;
+    }
+}

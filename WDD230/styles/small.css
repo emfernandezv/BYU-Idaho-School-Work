@@ -9,20 +9,14 @@ header{
     grid-template-columns: repeat(9,1fr) ;
     background-color: #0066CC;
     grid-column: 3/7;
-    border-radius: 0.5vw;
     height: 12vw;
-    box-shadow: 0 0 0.5vw black;
 }
 
 .image {
     grid-column: 3/5;
     height: 10vw;
-    border-radius: 0.5vw;
-    box-shadow: 0 0 0.5vw black;
-    opacity: 0.9;
     margin-top: 1vw;
     align-content: center;
-
 }
 
 .title {
@@ -54,7 +48,7 @@ header{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     line-height: 2;
     font-size: 0.8vw;
-    text-align: center;
+
 }
 
 .disclaimer {
@@ -92,11 +86,9 @@ footer{
     grid-template-columns: repeat(9,1fr) ;
     background-color: #0066CC;
     grid-column: 3/7;
-    border-radius: 0.5vw;
     height: 5vw;
-    box-shadow: 0 0 0.5vw black;
     color: white;
-   line-height: 0.1em;
+    line-height: 0.1em;
 }
 
 .f1 {
