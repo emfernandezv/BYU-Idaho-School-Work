@@ -77,5 +77,5 @@ document.querySelector('#pfooter').innerText = `©${year} - Eduardo Fernandez .:
 
 
 //footer date 
-let oLastModif = new Date(document.lastModified);
+let oLastModif = new Date(document.lastModified).toLocaleDateString('en-us', { weekday:"long", year:"numeric", month:"short", day:"numeric"}) ;
 document.querySelector('#date').innerText = `Last Updated: ${oLastModif}`;
