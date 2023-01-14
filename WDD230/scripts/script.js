@@ -13,8 +13,8 @@ const aList = {
             lessionPage: 'https://codepen.io/emfernandezv/pen/oNMYEom'
         } ,
         {   lessonNumber:'02',
-            lessonTitle:'Tittle 02',
-            lessionPage: ''
+            lessonTitle:'W02 Assignment: Design Principles Document',
+            lessionPage: './lesson2/design-principles.html'
         } ,
         {   lessonNumber:'03',
             lessonTitle:'Tittle 03',

@@ -1,0 +1,111 @@
+@media only screen and (min-width: 20em){
+    header{
+        display: grid;
+        grid-template-columns: repeat(8,1fr) ;
+        align-content: center;
+    }   
+
+    .HeadBlueBox{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        background-color: #05386a;
+        grid-column: 1/9;
+        text-align: center;
+        color: white;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        height: max-content;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: repeat(1,1fr) ;
+        background-color: white;
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
+        line-height : 25px;
+        font-family: Geneva, Tahoma, sans-serif;
+    }
+
+    .Title {
+        color: white;
+        background-color:  #05386a;
+        height: 2%;
+        
+        border-radius: 1vw 1vw 0 0;
+        margin-left: 1%; 
+        margin-bottom: 0;  
+        padding-left: 1%;
+        padding-top: 2%;
+    }
+
+    .subsection {
+        background-color:  #ccd8e4;
+        margin-left: 1%;
+        border-color: #05386a;
+        border-style: solid;
+        display: grid;
+        grid-template-columns: repeat(1,1fr) ;
+        margin-bottom: 1%;
+        
+
+    }
+   
+    .Image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+
+    .CompanyName  {
+        color: #05386a;
+        background-color:  #ccd8e4;
+        margin: 0.5%;
+        margin-left: 1.5%;
+        padding: 0;
+        margin-top: 2%;
+
+    }
+
+    .URL {
+        color: #05386a;
+        background-color:  #ccd8e4;
+        margin: 0.5%;
+        margin-left: 1.5%;
+        padding: 0;
+        width: auto;
+        margin-bottom: 3%;
+
+    }
+
+    .Description {
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        text-align: justify;
+        width: auto;
+    }
+
+    
+
+    footer{
+        grid-template-columns: repeat(8,1fr) ;
+        display: grid;
+        align-content: center;
+        padding-top: 1%;
+    }
+    
+    .FootBlueBox{
+        display: grid;
+        grid-template-rows: repeat(2,1fr) ;
+        background-color: #05386a;
+        grid-column:1/9;
+        height: max-content;
+        color: white;
+        text-align: center;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+    
+}
