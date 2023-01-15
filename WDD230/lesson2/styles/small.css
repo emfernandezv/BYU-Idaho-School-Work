@@ -3,6 +3,7 @@
         display: grid;
         grid-template-columns: repeat(8,1fr) ;
         align-content: center;
+        font-family: 'Cinzel', serif;
     }   
 
     .HeadBlueBox{
@@ -12,7 +13,8 @@
         grid-column: 1/9;
         text-align: center;
         color: white;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+        font-weight: 900;
         height: max-content;
     }
 
@@ -23,14 +25,13 @@
         margin-top: 0.5%;
         margin-bottom: 0.5%;
         line-height : 25px;
-        font-family: Geneva, Tahoma, sans-serif;
     }
 
     .Title {
         color: white;
         background-color:  #05386a;
         height: 2%;
-        
+        font-weight: 600;
         border-radius: 1vw 1vw 0 0;
         margin-left: 1%; 
         margin-bottom: 0;  
@@ -46,7 +47,7 @@
         display: grid;
         grid-template-columns: repeat(1,1fr) ;
         margin-bottom: 1%;
-        
+        font-family: 'Frank Ruhl Libre', serif;
 
     }
    
@@ -93,6 +94,7 @@
         display: grid;
         align-content: center;
         padding-top: 1%;
+        font-family: 'Cinzel', serif;
     }
     
     .FootBlueBox{
@@ -103,7 +105,8 @@
         height: max-content;
         color: white;
         text-align: center;
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+        font-weight: 600;
     }
 
 

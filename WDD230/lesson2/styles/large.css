@@ -1,6 +1,15 @@
 @media only screen and (min-width: 47em){
     main{
         grid-template-columns: repeat(3,1fr) ;
+        grid-auto-rows: 1fr;
+    }
+
+    .P1section{
+        grid-row: 1/2;
+    }
+
+    .P2section{
+        grid-row: 1/2;
     }
 
     .P3section{
