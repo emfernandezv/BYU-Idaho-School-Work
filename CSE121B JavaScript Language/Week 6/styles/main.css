@@ -1,0 +1,201 @@
+/* HTML Selectors */
+article {
+    margin: 10px;
+}
+
+body {
+    font-family: 'Kalam', cursive;
+}
+
+div {
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    width: 80%;
+}
+
+label {
+    display: inline-block;
+    min-width: 120px;
+    text-align: right;
+}
+
+main {
+    text-align: center;
+}
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:first-child {
+    display: block;
+}
+
+nav ul li {
+    display: none;
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #efefef;
+    color: black;
+}
+
+section {
+   display: grid;
+   grid-template-columns: auto 10vw 20vw 20vw  auto;
+   grid-template-rows: repeat(7,6vw);
+   font-size: 1.5vw;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#appTitle {
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
+
+#baseTitle {
+    grid-column: 2/3;
+    grid-row:2/3
+    
+}
+
+.middle{
+    margin-top: 1.5vw;
+    margin-right: 5vw;
+}
+
+.button{
+    width: 8vw;
+    height: 3vw;
+    margin-top: 2vw;
+    font-size: 30px;
+}
+
+#originDD {
+    grid-column: 3/4;
+    grid-row:2/3;
+    height: 3vw;
+    font-size: 30px;
+}
+
+#originValue {
+    grid-column: 4/5;
+    grid-row:2/3;
+    height: 3vw;
+    font-size: 30px;
+    text-align: right;
+}
+
+#updDate {
+    grid-column: 4/5;
+    grid-row:4/5;
+    margin-top: 2vw;
+}
+
+#valueTitle {
+    grid-column: 2/3;
+    grid-row:3/4
+}
+
+#finalDD {
+    grid-column: 3/4;
+    grid-row:3/4;
+    height: 3vw;
+    font-size: 30px;
+}
+
+#exchange {
+    grid-column: 4/5;
+    grid-row:3/4;
+}
+
+#rateTitle{
+    grid-column: 2/3;
+    grid-row:4/5
+}
+
+#exchangeRate {
+    grid-column: 3/4;
+    grid-row:4/5;
+    height: 3vw;
+    font-size: 30px;
+    text-align: right;
+}
+
+#amountTitle{
+    grid-column: 2/3;
+    grid-row:5/6
+}
+#finalValue {
+    grid-column: 3/4;
+    grid-row:5/6;
+    height: 3vw;
+    font-size: 30px;
+    text-align: right;
+}
+#apply{
+    grid-column: 4/5;
+    grid-row:5/6;
+}
+#message{
+    grid-column: 2/5;
+    grid-row:6/7;
+}
+
+/* Class Selectors */
+.active {
+    background-color: white;
+    color: black;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 32.5em) {
+    nav ul {
+        flex-direction: row;
+    }
+    
+    nav ul li:first-child {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+}
+
+
