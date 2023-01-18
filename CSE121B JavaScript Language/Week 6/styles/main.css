@@ -86,7 +86,7 @@ section {
     grid-row: 1/2;
 }
 
-#baseTitle {
+#OriginTitle {
     grid-column: 2/3;
     grid-row:2/3
     
@@ -101,21 +101,21 @@ section {
     width: 8vw;
     height: 3vw;
     margin-top: 2vw;
-    font-size: 30px;
+    font-size: 1vw;
 }
 
 #originDD {
     grid-column: 3/4;
     grid-row:2/3;
     height: 3vw;
-    font-size: 30px;
+    font-size: 1vw;
 }
 
 #originValue {
     grid-column: 4/5;
     grid-row:2/3;
     height: 3vw;
-    font-size: 30px;
+    font-size: 1vw;
     text-align: right;
 }
 
@@ -125,24 +125,24 @@ section {
     margin-top: 2vw;
 }
 
-#valueTitle {
+#ExchangeTitle {
     grid-column: 2/3;
     grid-row:3/4
 }
 
-#finalDD {
+#exchangeDD {
     grid-column: 3/4;
     grid-row:3/4;
     height: 3vw;
-    font-size: 30px;
+    font-size: 1vw;
 }
 
-#exchange {
+#getrate {
     grid-column: 4/5;
     grid-row:3/4;
 }
 
-#rateTitle{
+#RateTitle{
     grid-column: 2/3;
     grid-row:4/5
 }
@@ -151,11 +151,11 @@ section {
     grid-column: 3/4;
     grid-row:4/5;
     height: 3vw;
-    font-size: 30px;
+    font-size: 1vw;
     text-align: right;
 }
 
-#amountTitle{
+#AmountTitle{
     grid-column: 2/3;
     grid-row:5/6
 }
@@ -163,10 +163,10 @@ section {
     grid-column: 3/4;
     grid-row:5/6;
     height: 3vw;
-    font-size: 30px;
+    font-size: 1vw;
     text-align: right;
 }
-#apply{
+#submit{
     grid-column: 4/5;
     grid-row:5/6;
 }
