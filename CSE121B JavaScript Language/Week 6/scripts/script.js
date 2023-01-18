@@ -9,6 +9,8 @@ if (response.ok) {
         let finalCurrencySymbol =  originCurrencySymbol;
         populateDropDown('originDD',originCurrencySymbol);
         populateDropDown('finalDD',finalCurrencySymbol);
+    }else{
+        document.getElementById('message').innerText = 'There was an API Error trying to reach the first URL!';  
     }
 };
 
@@ -21,6 +23,8 @@ async function getExchange(v1,v2) {
             date = valueList['date'];
             let currencyValue = valueList[v1];
             populateConversion(parseFloat(currencyValue[v2]));
+        } else {
+            document.getElementById('message').innerText = 'There was an API Error trying to reach the second URL!';  
         }
 };
 
@@ -40,7 +44,12 @@ function populateDropDown(name,data) {
 function getValue(){
     let s1 = document.getElementById('originDD').value
     let s2 = document.getElementById('finalDD').value
-    getExchange(s1,s2);
+    let val = parseFloat(document.getElementById('originValue').value);
+    if (s1 == '' || s2 == '' || s1 == null || s2 == null || val <= 0 || isNaN(val)){
+        document.getElementById('message').innerText = 'You must input an amount and select the origin/final currency!';  
+    } else {
+        getExchange(s1,s2);
+    }
 }
 
 // calculates and populares the conversion fields
@@ -66,8 +75,13 @@ function setInitialFields(){
 
 // displays success message waits 5 secs and resets the page
 function apply(){
-    document.getElementById('message').innerText = 'You exchange has been executed successfully!';
-    setTimeout(reset, 5000)
+    let val2 = parseFloat(document.getElementById('finalValue').value);
+    if ( val2 <= 0 || isNaN(val2)){
+        document.getElementById('message').innerText = 'You must get a quote first!';
+    }else {
+        document.getElementById('message').innerText = 'You exchange has been executed successfully!';
+        setTimeout(reset, 5000);
+    }
 }
 
 //reloads the page
