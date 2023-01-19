@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;900&family=Frank+Ruhl+Libre:wght@300&display=swap');
+
 @media only screen and (min-width: 10em){
     header{
         display: grid;
@@ -13,7 +15,6 @@
         grid-column: 1/9;
         text-align: center;
         color: white;
-
         font-weight: 900;
         height: max-content;
     }
@@ -25,6 +26,8 @@
         margin-top: 0.5%;
         margin-bottom: 0.5%;
         line-height : 25px;
+        padding-left: 1%;
+        padding-right: 1%;
     }
 
     .Title {
@@ -35,8 +38,8 @@
         border-radius: 1vw 1vw 0 0;
         margin-left: 1%; 
         margin-bottom: 0;  
-        padding-left: 1%;
         padding-top: 2%;
+        padding-left: 2%;
     }
 
     .subsection {
