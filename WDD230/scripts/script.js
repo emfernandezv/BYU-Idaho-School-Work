@@ -17,8 +17,8 @@ const aList = {
             lessionPage: './lesson2/design-principles.html'
         } ,
         {   lessonNumber:'03',
-            lessonTitle:'Tittle 03',
-            lessionPage: 'Page 03'
+            lessonTitle:'W03 Assignment: Website Planning Document',
+            lessionPage: './lesson3'
         },
         {   lessonNumber:'04',
             lessonTitle:'Tittle 04',
