@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kirkland Chamber of Commerce Project for BYU-I">
+    <title>Kirklad Chamber of Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./styles/base.css" rel="stylesheet">
+    <link href="./styles/medium.css" rel="stylesheet">
+    <link href="./styles/large.css" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><img id="headerlogo" alt="Kirkland Chamber of Commerce" src="./images/logo.png"></a>
+            <div class="title">
+                <h1 id="title">Kirkland</h1>
+                <h2 id="subtitle">Chamber of Commerce</h2>
+            </div>
+            <div class ="socialmedia">
+                <a href="#"><img src="./images/linkedinlogo.png" alt="Linkedin Logo" class="sociallogo" ></a>
+                <a href="#"><img src="./images/facebooklogo.png" alt="facebook Logo" class="sociallogo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Discover</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Directory</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Join</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="topnav">
+                <div id="myLinks">
+                    <a href="#" class="nav-link">Discover</a>
+                    <a href="#" class="nav-link">Directory</a>
+                    <a href="#" class="nav-link">Join</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="dateblock" id="dateblock">
+                <p id="date"></p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="hero">Hero with site name and call to action</div>
+        <div id="event">Event</div>
+        <div id="weather">Weather</div>
+        <div id="news">News Release</div>
+        <div id="spot">
+            <div id="class1" class="subspot">Spotlight 1</div>
+            <div id="class2" class="subspot">Spotlight 2</div>
+            <div id="class3" class="subspot">Spotlight 3</div>
+        </div>
+        <div id="join">Join</div>
+    </main>
+
+    <footer>
+        <div id="footerBox" class="footerBox">
+            <img src="./images/logo.png" alt="Kirkland CC Logo Footer" id="footerlogo" >
+            <div id="footerText" class="footerText">
+                <p class="rcc">Kirkland Chamber of Commerce</p>
+                <p class="add">400 Urban Plz Suite 135, Kirkland, WA 98033</p>
+            </div>
+            <div id="location">
+                <p>info@kirklandcc.org</p>
+                <a target="_blank" href="https://goo.gl/maps/yW7YTtTY3vgRm7QE8">📍 Location Map</a>
+            </div>
+            <div id="info" class="info"></div>
+        </div>
+    </footer>
+</body>
+</html>
