@@ -8,7 +8,7 @@ function renderChapter(chapters) {
       <li ${chapter.action ? 'class="strike"' : ""}>
       <p>${chapter.detail}</p>
       <div>
-        <span data-function="delete">❌</span>
+        <span data-function="delete"  aria-label="delete">❌</span>
       </div>
     </li>`;
     });  
