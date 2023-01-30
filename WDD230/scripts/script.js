@@ -25,8 +25,8 @@ const aList = {
             lessionPage: './chamber'
         },
         {   lessonNumber:'05',
-            lessonTitle:'Tittle 05',
-            lessionPage: 'Page 05'
+            lessonTitle:'W05 Assignment: BOM',
+            lessionPage: './lesson05/bom.html'
         },
         {   lessonNumber:'06',
             lessonTitle:'Tittle 06',
