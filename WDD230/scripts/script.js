@@ -21,8 +21,8 @@ const aList = {
             lessionPage: './lesson3'
         },
         {   lessonNumber:'04',
-            lessonTitle:'Tittle 04',
-            lessionPage: 'Page 04'
+            lessonTitle:'Chamber of Commerce',
+            lessionPage: './chamber'
         },
         {   lessonNumber:'05',
             lessonTitle:'Tittle 05',
