@@ -1,7 +1,7 @@
 @media only screen and (min-width: 47em){
     main{
-        grid-template-columns:4;
-        grid-template-rows: 3;
+        grid-template-columns: repeat(4,auto);
+        grid-template-rows: repeat(3,auto);
     }
 
     #headerlogo{
