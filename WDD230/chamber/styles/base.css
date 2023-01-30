@@ -336,6 +336,11 @@ body{
     #location {
         padding-top: 1vw;
         grid-column: 5/6;
+  
+    }
+
+    #location p,a{
+        color: white;
     }
 
     #location p{
