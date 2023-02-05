@@ -40,6 +40,19 @@
         font-family: var(--heading-font);
     }
 
+    .banner{
+        background-color: var(--accent4-color);
+    }
+
+    .banner__content{
+        text-align: center;
+        display: flex;
+        width: max-content;
+        margin: 0 auto;
+        padding: 1vw;
+
+    }
+
     header .navbar{
         display: grid;
         grid-template-columns: 22vw auto 5vw;
