@@ -1,7 +1,8 @@
-@media only screen and (min-width: 47em){
+@media only screen and (min-width: 75em){
     main{
-        grid-template-columns: repeat(4,auto);
-        grid-template-rows: repeat(3,auto);
+        display: flexbox;
+        grid-template-columns: 20vw auto 20vw;
+        grid-template-rows: auto;
         font-size: 1.5em;
     }
 
@@ -97,75 +98,192 @@
         height: auto;
     }
 
+    .content-title{
+        font-size: 1vw;
+    }
+
+    #spot h3{
+        font-size: 1vw;
+    }
+
+    #event i{
+        font-size: 1em;
+    }
+
+    p{
+        font-size: 0.8em;
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
     #weather{
         grid-column: 1/2;
         grid-row: 2/3;
-        height: auto;
+        width: auto;
         margin-top: 0;
         margin-bottom: 0vw;
         margin-left: 0;
         margin-right: var(--div-spacing);
         margin-bottom: var(--div-spacing);
+        grid-template-columns: auto auto;
+        grid-template-rows: 2vw 5vw 2vw 2vw;
+
     }
+
+    #weather h2{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        padding-top: 1vw;
+        margin: 0;
+    }
+
+    #weather img{
+        height: 5vw;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-top: 1vw;
+    }
+
+    #weathervalue{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 3vw;
+        text-align: left;
+        margin-top: 1.2vw;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #weathertext{
+        font-size: 1vw;
+        padding-top: 1.5vw;
+    }
+
+    #v h4{
+        font-size: 1vw;
+    }
+
 
     #join {
         grid-column: 1/2;
         grid-row: 3/4;
         margin-right: var(--div-spacing);
         margin-bottom: 0vw;
-        height: auto;
+        width: auto;
     }
 
     #hero{
-        grid-column: 2/4;
+        grid-column: 2/3;
         grid-row: 1/3;
-        margin-top: 0;
-        height: auto;
         margin-right: var(--div-spacing);
+
+    }
+
+    #hero h2{
+        position: absolute;
+        margin-left: 1vw;
+        font-size: 1.5em;
+    }
+
+    
+    #hero a{
+        margin-right: 15vw;
+        margin-top: 23vw;
+        width: 20vw;
+        font-size: 3vw;
+        height: 8vw;
+        width: 23vw;
+
+
+    }
+
+    #hero a:hover{
+        background-color:var(--accent3-color) ;
+        color:var(--accent2-color);
+    }
+
+
+
+    #hero img{
+        max-width:100%;
+        height:auto;
+        background-size: cover;
     }
 
     #news {
-        grid-column: 2/4;
+        grid-column: 2/3;
         grid-row: 3/4;
         margin-bottom: 0vw;
         margin-right: var(--div-spacing);
         height: auto;
     }
 
+    #news p{
+        font-size: 1.2em;
+    }
+
     #spot {
-        grid-column: 4/5;
+        grid-column: 3/4;
         grid-row: 1/4;
         grid-template-columns: repeat(1,auto);
         grid-template-rows: repeat(3,auto);
-        margin-top: 0;
-        margin-bottom: 0vw;
+        margin: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        align-items: center;
 
     }
 
+    #spot .subspot{
+        margin-top: 0.2vw;
+    }
+
+    .subspot a{
+        font-size: 1vw;
+    }
     #spot #class1{
         grid-row: 1/2;
         grid-column: 1/2;                
-        margin-right: 0;
-        padding-left: var(--div-spacing);
-        padding-top: var(--div-spacing);
+    }
+
+    #class1 img{
+        height: 3vw;
     }
 
     #spot #class2{
         grid-row: 2/3;
         grid-column: 1/2;                
-        margin-right: 0;
-        padding-left: var(--div-spacing);
-        padding-top: var(--div-spacing);
+
+    }
+
+    #class2 img{
+        height: 3vw;
     }
 
     #spot #class3{
-        display: grid;
+        display: block;
         grid-row: 3/4;
-        grid-column: 1/2;                
-        padding-left: var(--div-spacing);
-        padding-top: var(--div-spacing);
-        margin-bottom: 0;
+        grid-column: 1/2; 
     }
+
+    #class3 img{
+        height: 5vw;
+    }
+
+    #join h3{
+        height: 2em;
+        padding-top: 1vw;
+    }
+
+    #join h3:hover{
+        height: 2em;
+        padding-top: 1vw;
+    }
+
+    #join p{
+        font-size: 1.2em;
+    }
+
 
     footer{
         font-size: 1.5vw;
