@@ -41,6 +41,7 @@
     }
 
     .banner{
+        display: none;
         background-color: var(--accent4-color);
     }
 
