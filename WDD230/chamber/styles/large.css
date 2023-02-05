@@ -1,4 +1,4 @@
-@media only screen and (min-width: 75em){
+@media only screen and (min-width: 64em){
     main{
         display: flexbox;
         grid-template-columns: 20vw auto 20vw;
@@ -187,14 +187,12 @@
 
     
     #hero a{
-        margin-right: 15vw;
-        margin-top: 23vw;
-        width: 20vw;
-        font-size: 3vw;
-        height: 8vw;
-        width: 23vw;
-
-
+        margin-bottom: 2vw;
+        margin-top: 25vw;
+        width: 15vw;
+        left: 30em;
+        height: 5vw;
+        font-size: 2vw;
     }
 
     #hero a:hover{

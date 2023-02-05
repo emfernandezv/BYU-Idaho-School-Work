@@ -1,7 +1,7 @@
 
 /*Font import*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-@media only screen and (min-width: 31em){
+@media only screen and (min-width: 20em){
 /*Variable Declaration*/
 :root {
   --accent1-color: #396e94   ;
@@ -196,13 +196,12 @@
         border: solid  #A0A0A0;
         font-size: 3em;
         margin-bottom: 2vw;
-        margin-top: 25vw;
-        margin-right: 0.5vw;
-        right: 8vw;
+        margin-top: 45vw;
+        left: 4em;
         text-decoration: none;
         border-radius: 3vw;
         height: auto;
-        width: 35vw;
+        width: 70vw;
         text-align: center;
         background-color:#8b1e3f ;
     }
@@ -223,7 +222,9 @@
 
 
     #hero img{
-        width: 100%;
+        max-width:100%;
+        height:auto;
+        background-size: cover;
     }
 
     #event {

@@ -1,4 +1,4 @@
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 32em) {
     
     main{
         grid-template-columns:repeat(2,auto);
@@ -11,6 +11,7 @@
             grid-template-columns: 20vw auto 30vw;
             grid-template-rows: auto auto 10vw;
             align-items: center;
+
     }
 
     .nav-menu{
@@ -72,6 +73,12 @@
     #hero{
         grid-column: 1/3;
         grid-row: 1/2;
+    }
+
+    #hero a{
+        margin-bottom: 2vw;
+        margin-top: 35vw;
+        left: 3em;
     }
 
     #news {
