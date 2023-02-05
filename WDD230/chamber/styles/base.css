@@ -27,7 +27,7 @@
 }
 
     html {
-        min-width: 500px;
+        min-width: 320px;
     }
 
     nav {
@@ -209,8 +209,8 @@
         border: solid  #A0A0A0;
         font-size: 3em;
         margin-bottom: 2vw;
-        margin-top: 45vw;
-        left: 4em;
+        margin-top: 35vw;
+        left: 1.5em;
         text-decoration: none;
         border-radius: 3vw;
         height: auto;
