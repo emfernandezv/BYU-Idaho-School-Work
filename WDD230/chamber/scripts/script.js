@@ -8,12 +8,9 @@ let year = d.getFullYear();
 let oLastModif2 = new Date(document.lastModified).toLocaleDateString('en-us') ;
 document.querySelector('#info').innerText = `©${year}    |    Eduardo Fernandez    |    WDD 230 Project    |    Last Modification: ${oLastModif2}`;
 
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
+const mainnav = document.getElementById('nav-menu')
+const hambutton = document.getElementById('menu');
+
+// Add a simple arrow function that listens for the <li> hamburger button click event.
+// When clicked, the <ul class="navigation">'s class list toggle'
+hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);

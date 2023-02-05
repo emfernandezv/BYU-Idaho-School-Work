@@ -2,45 +2,92 @@
     main{
         grid-template-columns: repeat(4,auto);
         grid-template-rows: repeat(3,auto);
+        font-size: 1.5em;
+    }
+
+    header .navbar{
+        display: grid;
+        grid-template-columns: 22vw 15vw auto 15vw;
+        grid-template-rows: auto auto auto;
+        padding-top: 0;
     }
 
     #headerlogo{
-        height: 7vw;
+        height: 6vw;
         margin-left: 12vw;
         margin-top: 1vw;
     }
 
     .title {
-        padding-top: 0.2vw;
+        padding-top: 0vw;
+        margin-top: 0vw;
+        width: 100%;
     }
+
+    li{
+        display: inline;
+        font-size: 1.5vw;
+        padding-top: 0.8vw;
+    }
+
 
     .title h1{
         font-size: 3.2vw;
-        margin-bottom: 0vw
+        margin-top: 1vw;
+    }
+
+    .navbar .socialmedia{
+        grid-column: 4/5;
+        margin-left: 0;
+    }
+
+    .sociallogo{
+        height: 2.5vw;
+        margin-top: 1vw;
+        padding-top: 0;
+        padding-left: 0;
+        margin-left: 1vw;
     }
 
     .title h2{
-        font-family: var(--paragraph-font);
         font-size: 1vw;
-        margin-top: 0vw;
     }
 
-    .topnav {
+
+
+    .nav-menu{
+        grid-column: 1/5;
+        grid-row: 2/3;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        margin-top: 1vw;
+    }
+
+    .nav-menu li:first-child {
         display: none;
     }
 
-    .nav-menu{
-        grid-column: 3/5;
-        grid-row: 2/3;
-        padding: 3vw;
+    .nav-menu li {
         display: inline;
+        padding: 0;
     }
 
+    .navbar .dateblock{
+        grid-column: 1/5;
+        margin-top: 0;
+        padding-top: 0;
+        
+    }
     .dateblock #date{
         font-size: 1vw;
-        height: 1.5vw;
+        height: 2vw;
+        margin-top: 0;
+        padding-top: 0.6vw;
     }
 
+    /*MAIN SECTION*/
     #event {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -112,6 +159,7 @@
     }
 
     #spot #class3{
+        display: grid;
         grid-row: 3/4;
         grid-column: 1/2;                
         padding-left: var(--div-spacing);
@@ -120,8 +168,25 @@
     }
 
     footer{
-        position:relative;
-        bottom:0;
+        font-size: 1.5vw;
+    }
+
+    #footerText p{
+        padding-top: 0.5vw;
+    }
+
+    footer .info{
+        font-size: 1vw;
+    }
+
+    .info {
+        margin-top: 0.5vw;
+    }
+
+    #footerlogo{
+        height: 5vw;
+        margin-left: 9vw;
+        margin-top: 1.8vw;
     }
 }
 
