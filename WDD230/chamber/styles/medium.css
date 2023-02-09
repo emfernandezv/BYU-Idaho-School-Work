@@ -1,4 +1,4 @@
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 37.5em) {
     
     main{
         grid-template-columns:repeat(2,auto);
@@ -157,6 +157,15 @@
         grid-row: 5/6;
         margin-top: var(--div-spacing);
         margin-bottom: 0vw;
+        width: fit-content;
+    }
+
+    #event h2{
+        font-size: 1em;
+    }
+
+    #event p{
+        font-size: 1em;
     }
 
     #weather{
@@ -165,7 +174,7 @@
         margin-left: var(--div-spacing);
         margin-top: var(--div-spacing);
         margin-bottom: 0vw;
-        grid-template-columns: 15vw 15vw;
+        grid-template-columns: auto auto;
         text-align: center;
 
     }
