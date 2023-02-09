@@ -252,6 +252,11 @@
         text-align: center;
     }
 
+    #event a{
+        color: var(--paragraph-background-color);
+        font-weight: bolder;
+    }
+
     .content-title{
         font-size: 4vw;
         text-align: center;
