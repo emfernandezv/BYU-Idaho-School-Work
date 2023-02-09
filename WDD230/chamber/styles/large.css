@@ -287,10 +287,6 @@
         font-size: 1.5vw;
     }
 
-    #footerText p{
-        padding-top: 0.5vw;
-    }
-
     footer .info{
         font-size: 1vw;
     }
@@ -303,6 +299,14 @@
         height: 5vw;
         margin-left: 9vw;
         margin-top: 1.8vw;
+    }
+
+    #footerText {
+        padding-top: 1vw;
+    }
+
+    #location {
+        padding-top: 1vw;
     }
 }
 

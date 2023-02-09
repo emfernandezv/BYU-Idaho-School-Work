@@ -205,7 +205,13 @@
         margin-left: 6vw;
     }
 
-    #footerText p{
-        padding-top: 1.5vw;
+    
+    #footerText {
+        padding-top: 3vw;
     }
+
+    #location {
+        padding-top: 3vw;
+    }
+
 }

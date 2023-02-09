@@ -217,6 +217,7 @@
         width: 70vw;
         text-align: center;
         background-color:#8b1e3f ;
+        color: var(--accent3-color);
     }
 
     #hero a:hover{
@@ -395,6 +396,11 @@
         display:none;
     }
 
+    #join a{
+        color: var(--accent3-color);
+        font-weight: bolder;
+    }
+
     /* Footer*/
 
     footer{
@@ -445,32 +451,30 @@
     }
 
     #footerText {
-        padding-top: 1.5vw;
         grid-column: 2/3;
-    }
-
-    #footerText p{
-        padding-top: 1.5vw;
+        padding-top: 2vw;
         color: white;
-        margin-bottom: 0.1vw;
-        margin-top: 0.1vw;
     }
 
+    #footerText h4{
+        margin-bottom: 0;
+        margin-top: 1vw;
+    }
+
+    
     #location {
-        padding-top: 1vw;
+        padding-top: 2vw;
         grid-column: 5/6;
         color: white;
-  
     }
 
-    #location p,a{
+    #location a{
         color: white;
     }
 
-    footer p{
-        padding-top: 0.3vw;
-
+    #location h4{
+        margin-bottom: 0.5vw;
+        margin-top: 1vw;
     }
-
 
 }
