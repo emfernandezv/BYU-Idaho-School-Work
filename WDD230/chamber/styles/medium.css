@@ -125,26 +125,6 @@
         text-align: center;
     }
 
-    #join h3{
-        border-radius: 3vw;
-        background-color: var(--accent2-color);
-        color: white;
-        height: 5vw;
-        padding-top: 1vw;
-        display: inline-block;
-        margin-left: 1vw;
-        margin-right: 1vw;
-    }
-
-    #join h3:hover{
-        background-color: var(--accent1-color);
-        color:  var(--accent2-color);
-    }
-
- 
-
-
-
     #event {
         grid-column: 1/2;
         grid-row: 5/6;
