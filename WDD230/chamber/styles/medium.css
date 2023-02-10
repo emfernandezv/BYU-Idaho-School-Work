@@ -128,6 +128,7 @@
     #join h3{
         border-radius: 3vw;
         background-color: var(--accent2-color);
+        color: white;
         height: 5vw;
         padding-top: 1vw;
         display: inline-block;
@@ -136,17 +137,13 @@
     }
 
     #join h3:hover{
-        
-        border-radius: 3vw;
         background-color: var(--accent1-color);
         color:  var(--accent2-color);
-        padding-top: 2vw;
-
     }
 
-    #join h3 a:hover{
-        color:  var(--accent4-color);
-    }
+ 
+
+
 
     #event {
         grid-column: 1/2;
