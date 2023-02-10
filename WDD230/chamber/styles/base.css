@@ -407,7 +407,7 @@
         background-color: var(--accent1-color);
         font-family: var(--heading-font);
         color: var(--accent3-color); 
-        font-size: 0.9em;
+        font-size: 0.95em;
         position:relative;
         bottom:0;
     }
@@ -418,7 +418,7 @@
 
     footer .info{
         font-size:1em;
-        display: grid;
+        display: grid; 
         border-top: solid var(--accent3-color);
         border-bottom: solid var(--accent3-color);
         height: 1.5em;
