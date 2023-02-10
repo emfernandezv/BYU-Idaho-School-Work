@@ -254,8 +254,9 @@
     }
 
     #event a{
-        color: var(--paragraph-background-color);
+        color: var(--accent2-color);
         font-weight: bolder;
+        font-style: italic;
     }
 
     .content-title{
