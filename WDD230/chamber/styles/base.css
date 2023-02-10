@@ -400,7 +400,6 @@
     #join h3{
         border-radius: 3vw;
         background-color: var(--accent2-color);
-        color: white;
         height: 5vw;
         padding-top: 1vw;
         display: inline-block;
