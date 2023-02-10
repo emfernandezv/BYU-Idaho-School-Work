@@ -195,10 +195,7 @@
         font-size: 2vw;
     }
 
-    #hero a:hover{
-        background-color:var(--accent3-color) ;
-        color:var(--accent2-color);
-    }
+
 
 
 
