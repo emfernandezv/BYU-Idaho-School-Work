@@ -204,6 +204,8 @@
         margin-bottom: var(--div-spacing);
     }
 
+
+
     #hero a{
         position: absolute;
         border: solid  #A0A0A0;
@@ -225,8 +227,6 @@
 
     }
 
-
-
     #hero h2{
         position: absolute;
         margin-left: 2vw;
@@ -236,10 +236,12 @@
 
 
     #hero img{
-        max-width:100%;
-        height:auto;
+        width:100%;
+        height: auto;
         background-size: cover;
     }
+
+  
 
     #event {
         grid-column: 1/2;

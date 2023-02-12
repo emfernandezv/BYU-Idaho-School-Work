@@ -13,6 +13,7 @@
     <link href="./styles/medium.css" rel="stylesheet">
     <link href="./styles/large.css" rel="stylesheet">
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -26,7 +27,7 @@
         </div>
 
         <nav class="navbar">
-            <a href="#" class="nav-logo"><img id="headerlogo" alt="Kirkland Chamber of Commerce" src="./images/logo.png"></a>
+            <a href="#" class="nav-logo"><img id="headerlogo" alt="Kirkland Chamber of Commerce" src="./images/logo.webp"></a>
             <div class="title">
                 <h1 id="title">Kirkland</h1>
                 <h2 id="subtitle">Chamber of Commerce</h2>
@@ -61,7 +62,13 @@
     <main>
         <div id="hero">
             <h2>Welcome to Kirkland</h2>
-            <img id="hero-img" src="./images/kirkland.jpg" alt="City of Kirkland">
+            <picture class="heroimg">
+                <source media="(max-width: 599px)" srcset="./images/wdd230-org-small.jpg">
+                <source media="(max-width: 1023px)" srcset="./images/wdd230-org-medium.jpg">
+                <source media="(max-width: 1609px)" srcset="./images/wdd230-org-large2.jpg">
+                <source media="(min-width: 1610px)" srcset="./images/wdd230-org-large.jpg">
+                <img id="hero-img" src="./images/wdd230-org-small.jpg" alt="City of Kirkland">
+            </picture>
             <a href="#">Join the Chamber now!</a>
         </div>
         <div id="event">
@@ -72,12 +79,12 @@
         <div id="weather">
             <h2 class="content-title">Weather</h2>
             <img src="./images/weather.png" alt="Weather icon">
-            <h3 id="weathervalue">5º</h3>
+            <h3 id="weathervalue"> <span id="grade">33</span>ºF</h3>
             <h3 id="weathertext">Partially Cloudy</h3>
             <hr>
             <div id="v">
-                <h4 id="v1">Wind Speed:  5km/h</h4>
-                <h4 id="v2">Wind Chill:  N/A</h4>
+                <h4 id="v1">Wind Speed:  <span id="windspeed">5</span> m/h</h4>
+                <h4 id="v2">Wind Chill: <span id="windchill">N/A</span></h4>
             </div>
         </div>
         <div id="news">

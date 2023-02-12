@@ -195,16 +195,6 @@
         font-size: 2vw;
     }
 
-
-
-
-
-    #hero img{
-        max-width:100%;
-        height:auto;
-        background-size: cover;
-    }
-
     #news {
         grid-column: 2/3;
         grid-row: 3/4;
