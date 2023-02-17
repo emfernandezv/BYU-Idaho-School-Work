@@ -1,17 +1,27 @@
+/*
 
+let imagesToLoad = document.querySelectorAll('img[data-src]');
 
-let imagesToLoad = document.querySelectorAll("img[data-src]");
+const imgOptions = {
+    treshhold: 1,
+    rootMargin: '0px 0px 50px 0px' 
+};
+
 const loadImages = (image) => {
-  image.setAttribute("src", image.getAttribute("data-src"));
+  image.setAttribute('src', image.getAttribute('data-src'));
   image.onload = () => {
-    image.removeAttribute("data-src");
+    image.removeAttribute('data-src');
   };
 };
+
+
+
+
 imagesToLoad.forEach((img) => {
     loadImages(img);
   });
 
-if ("IntersectionObserver" in window) {
+if ('IntersectionObserver' in window) {
 const observer = new IntersectionObserver((items, observer) => {
     items.forEach((item) => {
     if (item.isIntersecting) {
@@ -19,7 +29,7 @@ const observer = new IntersectionObserver((items, observer) => {
         observer.unObserve(item.target);
     }
     });
-});
+},imgOptions);
 imagesToLoad.forEach((img) => {
     observer.observe(img);
 });
@@ -28,10 +38,10 @@ imagesToLoad.forEach((img) => {
     loadImages(img);
 });
 }
-
+*/
 
 /*
-const images = document.querySelectorAll("[data-src");
+const images = document.querySelectorAll("img[data-src");
 
 function preLoadImage(img){
     const src = img.getAttribute("data-src");
@@ -42,8 +52,8 @@ function preLoadImage(img){
 }
 
 const imgOptions = {
-    treshhold: 0,
-    rootMargin: "200% 0%" 
+    treshhold: 1,
+    rootMargin: '0px 0px 50px 0px' 
 };
 
 

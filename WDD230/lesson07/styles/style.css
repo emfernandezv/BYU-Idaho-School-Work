@@ -5,9 +5,6 @@ body div{
     align-items: center;
 }
 
-img[data-src] {
-    filter: blur(0.2em);
-  }
 
   img {
     filter: blur(0em);
