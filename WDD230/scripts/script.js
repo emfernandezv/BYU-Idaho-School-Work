@@ -33,8 +33,8 @@ const aList = {
             lessionPage: 'Page 06'
         },
         {   lessonNumber:'07',
-            lessonTitle:'Tittle 07',
-            lessionPage: 'Page 07'
+            lessonTitle:'W07 Prepare Activity: Progressive Loading of Images',
+            lessionPage: './lesson07/lazyload.html'
         },
         {   lessonNumber:'08',
             lessonTitle:'Tittle 08',
