@@ -243,6 +243,7 @@
         grid-row: 2/3;
     }
     #place1-text{
+        display:none;
         grid-column: 2/10;
         grid-row: 2/3;
         
