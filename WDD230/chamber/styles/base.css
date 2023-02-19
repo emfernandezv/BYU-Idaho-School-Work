@@ -441,6 +441,13 @@
         color: var(--paragraph-color-on-color);
         margin-top: 2vw;
     }
+    .info2 {
+        grid-column: 1/7;
+        grid-row: 4/5;
+        text-align: center;
+        color: var(--paragraph-color-on-color);
+        font-size: 0.3em;
+    }
     #footerlogo{
         height: 7vw;
         margin-left: 7vw;
