@@ -209,7 +209,7 @@
     }
     #hero img{
         width:100%;
-        heigmht: auto;
+        height: auto;
         background-size: cover;
     }
     #event {
@@ -371,6 +371,16 @@
     .pic-class{
         margin-top: 1em;
         margin-bottom: 1em;
+    }
+    #place1-text{
+        display: none;
+            /* Bottom right text */
+            position: absolute;
+            bottom: -5em;
+            right: 2.3em;
+            background-color: black;
+            color: white;
+            width: 92%;
     }
     main .images-feed{
         grid-column: 2/6;
