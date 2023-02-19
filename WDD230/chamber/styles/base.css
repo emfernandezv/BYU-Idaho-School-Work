@@ -412,7 +412,7 @@
     footer{
         background-color: var(--accent1-color);
         font-family: var(--heading-font);
-        color: var(--accent3-color); 
+        color: var(--paragraph-color-on-color); 
         font-size: 0.95em;
         position:relative;
         bottom:0;
@@ -477,6 +477,13 @@
     #location h4{
         margin-bottom: 0.5vw;
         margin-top: 1vw;
+    }
+    .info2,.label,.visits  {
+        color: white;
+        font-size: 0.8em;
+        margin: 0;
+        padding: 0;
+
     }
 
 }
