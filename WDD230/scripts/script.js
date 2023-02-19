@@ -28,13 +28,13 @@ const aList = {
             lessonTitle:'W05 Assignment: Book Of Mormon',
             lessionPage: './lesson05/bom.html'
         },
-        {   lessonNumber:'06',
-            lessonTitle:'Tittle 06',
-            lessionPage: 'Page 06'
-        },
         {   lessonNumber:'07',
             lessonTitle:'W07 Prepare Activity: Progressive Loading of Images',
             lessionPage: './lesson07/lazyload.html'
+        },
+        {   lessonNumber:'07-1',
+            lessonTitle:'W07 Assignment: The Discover Page - Image Section',
+            lessionPage: './chamber/discover.html'
         },
         {   lessonNumber:'08',
             lessonTitle:'Tittle 08',
