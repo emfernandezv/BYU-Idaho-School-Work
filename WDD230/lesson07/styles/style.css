@@ -1,12 +1,19 @@
+
 body div{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5,1fr);
-    align-items: center;
+    
+    
 }
 
 
-  img {
-    filter: blur(0em);
-    transition: filter 0.5s;
-  }
+img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+  display: block;
+  margin: auto;
+  padding-bottom: 1vw;
+}
+
+   

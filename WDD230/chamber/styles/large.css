@@ -5,43 +5,35 @@
         grid-template-rows: auto;
         font-size: 1.5em;
     }
-
     header .navbar{
         display: grid;
         grid-template-columns: 22vw 15vw auto 15vw;
         grid-template-rows: auto auto auto;
         padding-top: 0;
     }
-
     #headerlogo{
         height: 6vw;
         margin-left: 12vw;
         margin-top: 1vw;
     }
-
     .title {
         padding-top: 0vw;
         margin-top: 0vw;
         width: 100%;
     }
-
     li{
         display: inline;
         font-size: 1.5vw;
         padding-top: 0.8vw;
     }
-
-
     .title h1{
         font-size: 3.2vw;
         margin-top: 1vw;
     }
-
     .navbar .socialmedia{
         grid-column: 4/5;
         margin-left: 0;
     }
-
     .sociallogo{
         height: 2.5vw;
         margin-top: 1vw;
@@ -49,13 +41,9 @@
         padding-left: 0;
         margin-left: 1vw;
     }
-
     .title h2{
         font-size: 1vw;
     }
-
-
-
     .nav-menu{
         grid-column: 1/5;
         grid-row: 2/3;
@@ -65,16 +53,13 @@
         grid-template-columns: repeat(4,auto);
         margin-top: 1vw;
     }
-
     .nav-menu li:first-child {
         display: none;
     }
-
     .nav-menu li {
         display: inline;
         padding: 0;
     }
-
     .navbar .dateblock{
         grid-column: 1/5;
         margin-top: 0;
@@ -97,25 +82,18 @@
         margin-right: var(--div-spacing);
         height: auto;
     }
-
+    #event p{
+        font-size: 0.8em;
+    }
     .content-title{
         font-size: 1vw;
     }
-
     #spot h3{
         font-size: 1vw;
     }
-
     #event i{
         font-size: 1em;
     }
-
-    p{
-        font-size: 0.8em;
-        padding-left: 1vw;
-        padding-right: 1vw;
-    }
-
     #weather{
         grid-column: 1/2;
         grid-row: 2/3;
@@ -129,21 +107,18 @@
         grid-template-rows: 2vw 5vw 2vw 2vw;
 
     }
-
     #weather h2{
         grid-column: 1/3;
         grid-row: 1/2;
         padding-top: 1vw;
         margin: 0;
     }
-
     #weather img{
         height: 5vw;
         grid-column: 1/2;
         grid-row: 2/3;
         padding-top: 1vw;
     }
-
     #weathervalue{
         grid-column: 2/3;
         grid-row: 2/3;
@@ -153,22 +128,17 @@
         margin-bottom: 0;
         padding-bottom: 0;
     }
-
     #weathertext{
         font-size: 1vw;
         padding-top: 1.5vw;
         ;
     }
-
     #v1 {
         margin-top: 1em;
     }
-
     #v h4{
         font-size: 1vw;
     }
-
-
     #join {
         grid-column: 1/2;
         grid-row: 3/4;
@@ -176,21 +146,20 @@
         margin-bottom: 0vw;
         width: auto;
     }
-
+    #join p{
+        font-size: 1em;
+    }
     #hero{
         grid-column: 2/3;
         grid-row: 1/3;
         margin-right: var(--div-spacing);
 
     }
-
     #hero h2{
         position: absolute;
         margin-left: 1vw;
         font-size: 1.5em;
     }
-
-    
     #hero a{
         margin-bottom: 2vw;
         margin-top: 25vw;
@@ -199,7 +168,6 @@
         height: 5vw;
         font-size: 2vw;
     }
-
     #news {
         grid-column: 2/3;
         grid-row: 3/4;
@@ -207,11 +175,9 @@
         margin-right: var(--div-spacing);
         height: auto;
     }
-
     #news p{
-        font-size: 1.2em;
+        font-size: 1em;
     }
-
     #spot {
         grid-column: 3/4;
         grid-row: 1/4;
@@ -223,11 +189,9 @@
         align-items: center;
 
     }
-
     #spot .subspot{
         margin-top: 0.2vw;
     }
-
     .subspot a{
         font-size: 1vw;
     }
@@ -235,68 +199,145 @@
         grid-row: 1/2;
         grid-column: 1/2;                
     }
-
     #class1 img{
         height: 3vw;
     }
-
     #spot #class2{
         grid-row: 2/3;
         grid-column: 1/2;                
-
     }
-
     #class2 img{
         height: 3vw;
     }
-
     #spot #class3{
         display: block;
         grid-row: 3/4;
         grid-column: 1/2; 
     }
-
     #class3 img{
         height: 5vw;
     }
-
     #join h3{
-        height: 2em;
-        padding-top: 1vw;
+        height: 1.8em;
+        padding-top: 1em;
+        margin:0;
     }
-
     #join h3:hover{
         height: 2em;
         padding-top: 1vw;
     }
 
-    #join p{
-        font-size: 1.2em;
+    /* DISCOVER*/
+
+    .discover-main{
+        grid-template-columns: repeat(10,auto);
+    }
+    .pagetitle{
+        grid-column: 2/10;
+        grid-row: 1/2;
+        text-align: center;
     }
 
+    #place1 {
+        grid-column: 2/10;
+        grid-row: 2/3;
+    }
+    #place1 img p{
+        width: 70%;
+    }
+    
+    #text1 {
+        grid-column: 2/10;
+        grid-row: 3/4;
+    }
 
+    #text2 {
+        grid-column: 2/7;
+        grid-row: 4/5;
+
+
+    }
+    #place2 p{
+        width: 89%;
+
+    }
+
+    #place2 {
+        grid-column: 6/10;
+        grid-row: 4/5;
+        width: 70%;
+        display: block;
+        margin-left: auto;
+
+    }
+    #place3 {
+        grid-column: 2/5;
+        grid-row: 5/6;
+        float: left;
+        width: 70%;
+    }
+    #place3 p{
+        width: 88%;
+
+    }
+    #text3 {
+        grid-column: 4/10;
+        grid-row: 5/6;
+    }
+    #text3 p{
+        width: auto;
+    }
+    #demographics-table {
+        float: right;
+        margin-left: 1em;
+        margin-top: 1.5em;
+        text-align: center;
+    }
+    #place4 {
+        grid-column: 2/10;
+        grid-row: 6/7;
+    }
+    #text4 {
+        grid-column: 2/10;
+        grid-row: 7/8;
+    }
+    #census-table{
+        float: right;
+        margin-left: 1em;
+    }    
+
+    #place5 {
+        grid-column: 2/5;
+        grid-row: 8/9;
+
+    }
+    #place5 p{
+        width: 90%;
+
+    }
+    #text5 {
+        grid-column: 5/10;
+        grid-row: 8/9;
+    }
+
+    /*FOOTER*/
     footer{
         font-size: 1.5vw;
     }
-
     footer .info{
         font-size: 1vw;
     }
-
     .info {
         margin-top: 0.5vw;
     }
-
     #footerlogo{
         height: 5vw;
         margin-left: 9vw;
         margin-top: 1.8vw;
     }
-
     #footerText {
         padding-top: 1vw;
     }
-
     #location {
         padding-top: 1vw;
     }
