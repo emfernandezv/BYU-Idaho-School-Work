@@ -37,8 +37,8 @@ const aList = {
             lessionPage: './chamber/discover.html'
         },
         {   lessonNumber:'08',
-            lessonTitle:'Tittle 08',
-            lessionPage: 'Page 08'
+            lessonTitle:'W08 Activity: Table Build',
+            lessionPage: './lesson07/tablebuild.html'
         },
         {   lessonNumber:'09',
             lessonTitle:'Tittle 09',
