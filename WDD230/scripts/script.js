@@ -38,7 +38,7 @@ const aList = {
         },
         {   lessonNumber:'08',
             lessonTitle:'W08 Activity: Table Build',
-            lessionPage: './lesson07/tablebuild.html'
+            lessionPage: './lesson08/tablebuild.html'
         },
         {   lessonNumber:'09',
             lessonTitle:'Tittle 09',
