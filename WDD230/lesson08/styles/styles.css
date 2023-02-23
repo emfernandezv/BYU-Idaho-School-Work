@@ -60,9 +60,7 @@ td {
     padding-right: 1em;
 }
 
-.gray {
-    background-color: lightgray;
-}
-
-
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
 
