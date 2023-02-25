@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kirkland Chamber of Commerce Project for BYU-I - Join Page">
+    <title>Kirkland Chamber of Commerce</title>
+    <link rel="icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./styles/base.css" rel="stylesheet">
+    <link href="./styles/medium.css" rel="stylesheet">
+    <link href="./styles/large.css" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/counter.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        
+        <div class="banner">
+            <div class="banner__content">
+                <div class="banner__text">
+                    <strong>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</strong>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <a href="#" class="nav-logo"><img id="headerlogo" alt="Kirkland Chamber of Commerce" src="./images/logo.webp"></a>
+            <div class="title">
+                <h1 id="title">Kirkland</h1>
+                <h2 id="subtitle">Chamber of Commerce</h2>
+            </div>
+            <div class ="socialmedia">
+                <a href="https://www.linkedin.com/"><img src="./images/linkedinlogo.png" alt="Linkedin Logo" class="sociallogo" ></a>
+                <a href="https://www.facebook.com/"><img src="./images/facebooklogo.png" alt="facebook Logo" class="sociallogo"></a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a id="menu" href="#">≡ Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./discover.html" class="nav-link">Discover</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Directory</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./join.html" class="nav-link">Join</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="dateblock" id="dateblock">
+                <h2 id="date">date</h2>
+            </div>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <div class="pagetitle">
+            <h1>Be part of the Chamber!</h1>
+            <h2> Please fill out the form below and we will get in contact with you as soon as possible. </h2>
+        </div>
+        <form class="form" method="get" action="thankyou.html">
+            <fieldset id="fs1">
+                <legend>Personal Information</legend>
+                <label id="label-firstname">First Name*:
+                    <input id="input-firstname" type="text" minlength="2" required>
+                </label>
+                <label id="label-lastname">Last Name*:
+                    <input id="input-lastname" type="text" minlength="2" required>
+                </label>  
+                <label id="label-email">E-mail*: 
+                    <input id="input-email" type="text" minlength="5" pattern="[A-Za-z^@\s]+@[A-Za-z^@\s]+\.[^@\s]+" required placeholder="email@mail.com">
+                </label>
+                <label id="label-cellphone">Cellphone*: 
+                    <input id="input-cellphone" type="tel" maxlength="10"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="###-###-####">
+                </label>
+            </fieldset>
+            <fieldset  id="fs2">
+                <legend>Business Information</legend>
+                <label id="label-businessname">Business Name*: 
+                    <input id="input-businessname" type="text" minlength="2" required>
+                </label>
+                <label id="label-position">Position Title: 
+                    <input id="input-position" type="text" minlength="7"  >
+                </label>
+                <label id="label-membership">Membership Level*:
+                    <select id="input-membership" required>
+                        <option value="0">Please Select you level</option>
+                        <option value="4">Gold Membership</option>
+                        <option value="3">Silver Membership</option>
+                        <option value="2">Bronze Membership</option>
+                        <option value="1">NP Membership (Non profit org/No fee)</option>
+                    </select>
+                </label>
+                <label>
+                    <input id="input-loadingtime" type="datetime" hidden>
+                </label>
+
+                <label id="label-businessdesc">Business Description*: 
+                    <textarea id="input-businessdesc" name="input-businessdesc" rows="5" cols="1" placeholder="Please add a brief description of your business" required></textarea>
+                </label>
+            </fieldset>
+            <fieldset id="fs3">
+                <legend>Benefits:</legend>
+                <ul id="benefits">You will get:
+                    <li>Select a membership level first</li>
+                </ul>
+                <input id="submit" type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <div id="footerBox" class="footerBox">
+            <img src="./images/logo.png" alt="Kirkland CC Logo Footer" id="footerlogo" >
+            <div id="footerText" class="footerText">
+                <h4 class="rcc">Kirkland Chamber of Commerce</h4>
+                <h4 class="add">400 Urban Plz Suite 135, Kirkland, WA 98033</h4>
+            </div>
+            <div id="location">
+                <a href="mailto:info@kirklandcc.org"><h4>info@kirklandcc.org</h4></a>
+                <a target="_blank" href="https://goo.gl/maps/yW7YTtTY3vgRm7QE8">📍 Location Map</a>
+            </div>
+            <div id="info" class="info"></div>
+            <div id="info2" class="info2">
+                <p><span class="label">Number of visits: </span><span id="visits" class="visits">0</span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
