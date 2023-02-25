@@ -440,6 +440,14 @@
         font-size: 1em;
         background-color: #F8F8F8;
         height: 1.5em;
+        border-radius: 0.5em;
+    }
+
+    .join-main #fs1 input:required{
+        border-left: red solid 5px;
+    }
+    .join-main #fs2 input:required,textarea:required,select{
+        border-left: red solid 5px;
     }
     .join-main textarea{
         font-size: 1em;
@@ -456,6 +464,7 @@
         grid-column: 1/2;
         grid-row: 1/2;
         display: grid;
+        margin: 0.5em;
     }
     .join-main #label-firstname{
         grid-column: 1/2;
@@ -481,7 +490,7 @@
         grid-column: 1/2;
         grid-row: 2/3;
         display: grid;
-        margin-bottom: 1em;
+        margin: 0.5em;
     }
     .join-main #label-businessname{
         grid-column: 1/2;
@@ -504,16 +513,38 @@
         display: grid;
     }
 
-    .join-main #fs3{
-        border: 0;
+    .table-base{
+        display: none;
+        margin: 0.5em;
     }
 
-    .join-main ul,li{
-        font-size: 1.2em;
+    .table-base tr:nth-child(even) {
+        background-color: #f2f2f2;
     }
+
+    .table-base .featurelabel {
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: left;
+        width: 40%;
+    }
+
+    .table-base .feature{
+        text-align: center;
+        width: 15%;
+    }
+
+    .table-base .ben-sub{
+        text-align: center;
+        background-color: var(--accent2-color);
+        color: var(--accent5-color);
+        font-weight: 700;
+    }
+
     .join-main #submit{
         margin-bottom: 0.5em;
-        width: 100%;
+        height: 3em;
+        margin: 0.5em;
     }
 
     /*THANKS MAIN*/

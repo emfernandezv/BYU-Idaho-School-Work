@@ -14,7 +14,6 @@
     <link href="./styles/large.css" rel="stylesheet">
     <script src="scripts/script.js" defer></script>
     <script src="scripts/counter.js" defer></script>
-    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -63,39 +62,37 @@
     <main class="join-main">
         <div class="pagetitle">
             <h1>Be part of the Chamber!</h1>
-            <h2> Please fill out the form below and we will get in contact with you as soon as possible. </h2>
+            <h2> Please fill out the form below and we will get you started briefly. </h2>
         </div>
         <form class="form" method="get" action="thankyou.html">
             <fieldset id="fs1">
-                <legend>Personal Information</legend>
                 <label id="label-firstname">First Name*:
-                    <input id="input-firstname" type="text" minlength="2" required>
+                    <input type="text" minlength="2" required>
                 </label>
                 <label id="label-lastname">Last Name*:
-                    <input id="input-lastname" type="text" minlength="2" required>
+                    <input type="text" minlength="2" required>
                 </label>  
                 <label id="label-email">E-mail*: 
-                    <input id="input-email" type="text" minlength="5" pattern="[A-Za-z^@\s]+@[A-Za-z^@\s]+\.[^@\s]+" required placeholder="email@mail.com">
+                    <input type="text" minlength="5" pattern="[A-Za-z^@\s]+@[A-Za-z^@\s]+\.[^@\s]+" required placeholder="email@mail.com">
                 </label>
                 <label id="label-cellphone">Cellphone*: 
-                    <input id="input-cellphone" type="tel" maxlength="10"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="###-###-####">
+                    <input type="tel" maxlength="10"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="###-###-####">
                 </label>
             </fieldset>
             <fieldset  id="fs2">
-                <legend>Business Information</legend>
                 <label id="label-businessname">Business Name*: 
-                    <input id="input-businessname" type="text" minlength="2" required>
+                    <input type="text" minlength="2" required>
                 </label>
                 <label id="label-position">Position Title: 
-                    <input id="input-position" type="text" minlength="7"  >
+                    <input type="text" minlength="7" pattern="[A-Za-z\s\-]{7,}" title="Please enter at least 7 alphabetical characters, hyphens or spaces" >
                 </label>
                 <label id="label-membership">Membership Level*:
                     <select id="input-membership" required>
-                        <option value="0">Please Select you level</option>
+                        <option value="">Please Select you level</option>
                         <option value="4">Gold Membership</option>
                         <option value="3">Silver Membership</option>
                         <option value="2">Bronze Membership</option>
-                        <option value="1">NP Membership (Non profit org/No fee)</option>
+                        <option value="1">NP Membership (Non profit)</option>
                     </select>
                 </label>
                 <label>
@@ -106,13 +103,70 @@
                     <textarea id="input-businessdesc" name="input-businessdesc" rows="5" cols="1" placeholder="Please add a brief description of your business" required></textarea>
                 </label>
             </fieldset>
-            <fieldset id="fs3">
-                <legend>Benefits:</legend>
-                <ul id="benefits">You will get:
-                    <li>Select a membership level first</li>
-                </ul>
-                <input id="submit" type="submit" value="Submit">
-            </fieldset>
+            <div class="table-base">
+                <table>
+                    <caption>
+                            Member Benefits
+                    </caption>
+                    <thead>
+                        <tr class="tale-header">
+                            <td class="ben-sub">Benefit</td>
+                            <td class="ben-sub">NP</td>
+                            <td class="ben-sub">Bronze</td>
+                            <td class="ben-sub">Silver</td>
+                            <td class="ben-sub">Gold</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tale-body">
+                            <td class="featurelabel">Ads</td>
+                            <td class="feature">✅</td>
+                            <td class="feature">✅</td>
+                            <td class="feature">✅</td>
+                            <td class="feature">✅</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="featurelabel">Discounts</td>
+                            <td class="feature">✘</td>
+                            <td class="feature">✅</td>
+                            <td class="feature">✅</td>
+                            <td class="feature">✅</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="featurelabel">Webinars</td>
+                            <td class="feature">✘</td>
+                            <td class="feature">✘</td>
+                            <td class="feature">✅</td>
+                            <td class="feature">✅</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="featurelabel">Online Ads</td>
+                            <td class="feature">✘</td>
+                            <td class="feature">✘</td>
+                            <td class="feature">✘</td>
+                            <td class="feature">✅</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="featurelabel">BTL</td>
+                            <td class="feature">✘</td>
+                            <td class="feature">✘</td>
+                            <td class="feature">✘</td>
+                            <td class="feature">✅</td>
+                        </tr>
+                    </tbody>
+                    <thead>
+                        <tr class="tale-header">
+                            <td class="ben-sub">Monthly fee $ (usd)</td>
+                            <td class="ben-sub">Free</td>
+                            <td class="ben-sub">65</td>
+                            <td class="ben-sub">85</td>
+                            <td class="ben-sub">100</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <input id="submit" type="submit" value="Submit">
+           
         </form>
     </main>
 

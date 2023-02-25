@@ -343,18 +343,18 @@
         
     }
     .join-main label{
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .join-main input{
-        font-size: 1em;
-        height: 2em;
+        font-size: 1vw;
+        height: 1.5vw;
         
     }
     .join-main textarea{
-        font-size: 1em;
+        font-size: 1vw;
     }
     .join-main select{
-        font-size: 1em;
+        font-size: 1vw;
     }
     .join-main #fs1{
         grid-template-columns: auto;
@@ -421,29 +421,28 @@
         display: grid;
         margin-right: 0.5em;
     }
-    .join-main #fs3{
+    .join-main .table-base{
         grid-column: 3/4;
         grid-row: 1/2;
-        border: 1px solid;
-        padding-bottom: 0;
         margin-bottom: 0.5em;
         margin-left: 0.5em;
-        display: grid;
-        width: 100% / 3;
     }
-    .join-main ul{
-        font-size: 0.7em;
-        
-    }
-    .join-main li{
-        display:block;
-        font-size: 1em;
-        width: fit-content
-        ;
-        
-    }
-    .join-main #submit{
 
+    .table-base .featurelabel,.feature{
+        font-size: 1.2vw;
+    }
+    .table-base .ben-sub{
+        font-size: 1vw;
+    }
+
+    .table-base caption{
+        font-size: 1vw;
+    }
+
+
+    .join-main #submit{
+        grid-column: 1/4;
+        grid-row: 2/3;
         font-size: 1.5em;
     }
     .thankyou-main h1{
