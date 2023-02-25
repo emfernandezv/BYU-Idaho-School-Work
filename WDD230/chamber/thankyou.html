@@ -13,7 +13,6 @@
     <link href="./styles/medium.css" rel="stylesheet">
     <link href="./styles/large.css" rel="stylesheet">
     <script src="scripts/script.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
     <script src="scripts/counter.js" defer></script>
 </head>
 <body>
@@ -60,68 +59,15 @@
         </nav>
     </header>
 
-    <main class="index-main">
-        <div id="hero">
-            <h2>Welcome to Kirkland</h2>
-            <picture class="heroimg">
-                <source media="(max-width: 599px)" srcset="./images/kirkland400.webp">
-                <source media="(max-width: 1023px)" srcset="./images/kirkland600.webp">
-                <source media="(min-width: 1024px)" srcset="./images/kirkland1024.webp">
-                
-                <img id="hero-img" src="./images/kirkland400.webp" alt="City of Kirkland">
-            </picture>
-            <a href="#">Join the Chamber now!</a>
-        </div>
-        <div id="event">
-            <h2 class="content-title" >Ribbon Cutting</h2>
-            <i class="fa fa-diamond" >The Diamond Shack</i> 
-            <p >Join us for the grand opening of the Diaind Shack, Thursday at 1:00 p.m. <a href="#">more info...</a></p>
-        </div>
-        <div id="weather">
-            <h2 class="content-title">Weather</h2>
-            <img src="./images/weather.png" alt="Weather icon">
-            <h3 id="weathervalue"> <span id="grade">33</span>ºF</h3>
-            <h3 id="weathertext">Partially Cloudy</h3>
-            <hr>
-            <div id="v">
-                <h4 id="v1">Wind Speed:  <span id="windspeed">5</span> m/h</h4>
-                <h4 id="v2">Wind Chill: <span id="windchill">N/A</span></h4>
-            </div>
-        </div>
-        <div id="news">
-            <h2 class="content-title">News Release</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div id="spot">
-            <div id="class1" class="subspot">
-                <h2 class="content-title">Thankful Transport</h2>
-                <img src="./images/truck.png" alt="truck icon">
-                <h3>"We get it there for you!"</h3>
-                <hr>
-                <h3><a href="mailto:email@kirklandmovers.com">email@kirklanmovers.com</a></h3>
-                <h3>(801)987-5487</h3>
-            </div>
-            <div id="class2" class="subspot">
-                <h2 class="content-title">Code Primera</h2>
-                <img src="./images/code.png" alt="code icon">
-                <h3>"After school developers program!"</h3>
-                <hr>
-                <h3><a href="mailto:email@kirklandcoders.com">email@kirklancoders.com</a></h3>
-                <h3>(801)456-6565</h3>
-            </div>
-            <div id="class3" class="subspot">
-                <h2 class="content-title">Build a Treefort</h2>
-                <img src="./images/tree.png" alt="tree icon">
-                <h3>"More than 1,000 ideas for your building!"</h3>
-                <hr>
-                <h3><a href="mailto:email@kirklandbuilders.com">email@kirklanmovers.com</a></h3>
-                <h3>(801)123-5252</h3>
-            </div>
-        </div>
-        <div id="join">
-            <h3><a href="#">Join Us!</a></h3>
-            <p>Discover how to join the chamber of commerce and start getting benefits for your organization!</p>
-        </div>
+    <main class="thankyou-main">
+        <picture >
+            <source media="(max-width: 599px)"  srcset="./images/thankyou/welcome400.webp">
+            <source media="(max-width: 1023px)" srcset="./images/thankyou/welcome600.webp">
+            <source media="(min-width: 1024px)" srcset="./images/thankyou/welcome1024.webp">
+            <img src="./images/thankyou/welcome400.webp" alt="thanks" id="center">
+        </picture>
+        <h1>We will be getting in contact with you soon.</h1>
+        <h2>The new members process will take 2 days. We will guide you throught the process.</h2>
     </main>
 
     <footer>
