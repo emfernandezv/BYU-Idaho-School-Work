@@ -350,15 +350,15 @@
         color:  white;
     }
     /* DISCOVER*/
-    main .pagetitle{
+    .discover-main .pagetitle{
         grid-column: 1/7;
         grid-row: 1/2;  
     }
-    .pagetitle h1{
+    .discover-main .pagetitle h1{
         text-align: center;
         font-family: var(--heading-font)
     }
-    picture p{
+    .discover-main picture p{
         background-color: #E0E0E0;
         width: 93%;
         padding-top: 0.5em;
@@ -368,11 +368,11 @@
         margin: auto;
         font-family: var(--paragraph-font);
     }
-    .pic-class{
+    .discover-main .pic-class{
         margin-top: 1em;
         margin-bottom: 1em;
     }
-    #place1-text{
+    .discover-main #place1-text{
         display: none;
             /* Bottom right text */
             position: absolute;
@@ -382,31 +382,165 @@
             color: white;
             width: 92%;
     }
-    main .images-feed{
+    .discover-main  .images-feed{
         grid-column: 2/6;
         grid-row:2/3;
         display: grid;
         grid-template-rows: repeat(6,auto); 
     }
-    .images-feed img {
+    .discover-main .images-feed img {
         display: block;
         margin: auto;
         width: 95%;
         height: auto;
     }
-    .places{
+    .discover-main .places{
         width: 100%;  height: auto; 
     }
-    .paragraph {
+    .discover-main .paragraph {
         text-align: justify;
     }
-    .paragraph table{
+    .discover-main .paragraph table{
         border: solid gray;
         margin: auto;
     }
-    table td{
+    .discover-main table td{
        text-align: center;
     }
+    
+    /* JOIN*/
+    .join-main{
+        margin-left: 2em;
+        margin-right: 2em;
+        padding: 0;
+    }
+    .join-main .pagetitle{
+        text-align: center;
+        grid-column: 1/7;
+        grid-row: 1/2;
+    }
+    .join-main form{
+        grid-column: 1/7;
+        grid-row: 2/3;
+        display: grid;
+        grid-template-columns: auto;
+        margin: 1em;
+    }
+    .join-main label{
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+        align-self: flex-start
+    }
+    .join-main select{
+        font-size: 1em;
+        height: 2em;
+        background-color: #F8F8F8;
+    }
+    .join-main input{
+        font-size: 1em;
+        background-color: #F8F8F8;
+        height: 1.5em;
+    }
+    .join-main textarea{
+        font-size: 1em;
+        background-color: #F8F8F8;
+    }
+    .join-main button{
+        height: 3em;
+        font-size: 2em;
+    }
+    .join-main legend{
+        font-size: 1em;
+    }
+    .join-main #fs1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: grid;
+    }
+    .join-main #label-firstname{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: grid;
+    }
+    .join-main #label-lastname{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: grid;
+    }
+    .join-main #label-email{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: grid;
+    }
+    .join-main #label-cellphone{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        display: grid;
+    }
+    .join-main #fs2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: grid;
+        margin-bottom: 1em;
+    }
+    .join-main #label-businessname{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        display: grid;
+    }
+    .join-main #label-position{
+        grid-column: 1/2;
+        grid-row: 6/7;
+        display: grid;
+    }
+    .join-main #label-membership{
+        grid-column: 1/2;
+        grid-row: 7/8;
+        display: grid;
+    }
+    .join-main #label-businessdesc{
+        grid-column: 1/2;
+        grid-row: 8/9;
+        display: grid;
+    }
+
+    .join-main #fs3{
+        border: 0;
+    }
+
+    .join-main ul,li{
+        font-size: 1.2em;
+    }
+    .join-main #submit{
+        margin-bottom: 0.5em;
+        width: 100%;
+    }
+
+    /*THANKS MAIN*/
+    .thankyou-main{
+        grid-template-columns: auto;
+        text-align: center;
+    }
+    #center{
+        display: block;  
+        margin-left: auto;  
+        margin-right: auto;  
+    }
+
+    .thankyou-main h1{
+        font-size: 5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        margin: 0.5em
+    }
+    .thankyou-main h2{
+        font-size: 3em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        margin: 0.5em;
+        margin-top: 0;
+    }
+
 
     /* Footer*/
     footer{

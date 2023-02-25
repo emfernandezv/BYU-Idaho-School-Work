@@ -173,6 +173,96 @@
     .places:hover{
         opacity: 0.9;
     }
+
+    /*MAIN JOIN*/
+    .join-main form{
+        grid-template-columns: auto;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .join-main label{
+        font-size: 1em;
+    }
+    .join-main input{
+        font-size: 1em;
+    }
+    .join-main textarea{
+        font-size: 1em;
+    }
+    .join-main select{
+        font-size: 1em;
+    }
+    .join-main #fs1{
+        grid-template-columns: auto auto;
+        grid-row: 1/2;
+    }
+    .join-main #label-firstname{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: grid;
+        margin-right: 1em;
+    }
+    .join-main #label-lastname{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: grid;
+    }
+    .join-main #label-email{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: grid;
+        margin-right: 1em;
+    }
+    .join-main #label-cellphone{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        display: grid;
+
+    }
+    .join-main #fs2{
+        grid-template-columns: auto auto;
+        grid-row: 2/3;
+    }
+    .join-main #label-businessname{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: grid;
+        margin-right: 1em;
+    }
+    .join-main #label-position{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .join-main #label-membership{
+        grid-column: 1/3;
+        grid-row: 7/8;
+        display: grid;
+    }
+    .join-main #label-businessdesc{
+        grid-column: 1/3;
+        grid-row: 9/10;
+        display: grid;
+    }
+    .join-main #fs3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    .join-main ul{
+        font-size: 0.7em;
+    }
+    .join-main #submit{
+        font-size: 1.5em;
+    }
+
+    .thankyou-main h1{
+        font-size: 3em;
+    }
+    .thankyou-main h2{
+        font-size: 2em;
+    }
+
+    /*FOOTER*/
     footer{
         font-size: 1em;
         font-weight: bolder;
