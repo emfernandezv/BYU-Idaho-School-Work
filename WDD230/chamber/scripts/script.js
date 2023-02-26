@@ -24,6 +24,6 @@ const hambutton = document.getElementById('menu');
 // Add a simple arrow function that listens for the <li> hamburger button click event.
 // When clicked, the <ul class="navigation">'s class list toggle'
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
-var localeDateTime = (new Date()).toLocaleString();
-document.getElementById('input-loadingtime').value = localeDateTime;
+var localeDateTime = new Date();
+document.getElementById('datetime').innertext = localeDateTime;
 
