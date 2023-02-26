@@ -67,21 +67,21 @@
         <form class="form" method="get" action="thankyou.html">
             <fieldset id="fs1">
                 <label id="label-firstname">First Name*:
-                    <input type="text" minlength="2" required>
+                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}"  required>
                 </label>
                 <label id="label-lastname">Last Name*:
-                    <input type="text" minlength="2" required>
+                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}" required>
                 </label>  
                 <label id="label-email">E-mail*: 
-                    <input type="text" minlength="5" pattern="[A-Za-z^@\s]+@[A-Za-z^@\s]+\.[^@\s]+" required placeholder="email@mail.com">
+                    <input type="text" pattern="[A-Za-z^@\s]+@[A-Za-z^@\s]+\.[^@\s]+" required placeholder="email@mail.com">
                 </label>
                 <label id="label-cellphone">Cellphone*: 
-                    <input type="tel" maxlength="10"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="###-###-####">
+                    <input type="tel" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="###-###-####">
                 </label>
             </fieldset>
             <fieldset  id="fs2">
                 <label id="label-businessname">Business Name*: 
-                    <input type="text" minlength="2" required>
+                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}"  required>
                 </label>
                 <label id="label-position">Position Title: 
                     <input type="text" minlength="7" pattern="[A-Za-z\s\-]{7,}" title="Please enter at least 7 alphabetical characters, hyphens or spaces" >
