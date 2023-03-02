@@ -41,8 +41,8 @@ const aList = {
             lessionPage: './lesson08/tablebuild.html'
         },
         {   lessonNumber:'09',
-            lessonTitle:'Tittle 09',
-            lessionPage: 'Page 09'
+            lessonTitle:'W09 Activity: Working with JSON data and the Fetch API',
+            lessionPage: './lesson09/prophets.html'
         },
         {   lessonNumber:'10',
             lessonTitle:'Tittle 10',
