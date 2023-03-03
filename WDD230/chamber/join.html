@@ -67,16 +67,16 @@
         <form class="form" method="get" action="thankyou.html">
             <fieldset id="fs1">
                 <label id="label-firstname">First Name*:
-                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}"  required>
+                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}"  required title="Min: 2 Characters alphabetical, can use - or spaces" >
                 </label>
                 <label id="label-lastname">Last Name*:
-                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}" required>
+                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}" required title="Min: 2 Characters alphabetical, can use - or spaces">
                 </label>  
                 <label id="label-email">E-mail*: 
-                    <input type="text" pattern="[A-Za-z^@\s]+@[A-Za-z^@\s]+\.[^@\s]+" required placeholder="email@mail.com">
+                    <input type="text" pattern="[A-Za-z^@\s]+@[A-Za-z^@\s]+\.[^@\s]+" required placeholder="email@mail.com" title="Must contain @ and .">
                 </label>
                 <label id="label-cellphone">Cellphone*: 
-                    <input type="tel" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="###-###-####">
+                    <input type="tel" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="###-###-####" title="Numeric Values">
                 </label>
             </fieldset>
             <fieldset  id="fs2">
