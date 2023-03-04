@@ -67,21 +67,21 @@
         <form class="form" method="get" action="thankyou.html">
             <fieldset id="fs1">
                 <label id="label-firstname">First Name*:
-                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}"  required title="Min: 2 Characters alphabetical, can use - or spaces" >
+                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}"  required title="Please enter at least 2 alphabetical characters , can use - or spaces. Eg: Joe" >
                 </label>
                 <label id="label-lastname">Last Name*:
-                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}" required title="Min: 2 Characters alphabetical, can use - or spaces">
+                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}" required title="Please enter at least 2 alphabetical characters , can use - or spaces. Eg: Smith">
                 </label>  
                 <label id="label-email">E-mail*: 
-                    <input type="text" pattern="[A-Za-z^@\s]+@[A-Za-z^@\s]+\.[^@\s]+" required placeholder="email@mail.com" title="Must contain @ and .">
+                    <input type="text" pattern="[A-Za-z^@\s]+@[A-Za-z^@\s]+\.[^@\s]+" required placeholder="email@mail.com" title="Must contain @ and . Eg: email@mail.com">
                 </label>
                 <label id="label-cellphone">Cellphone*: 
-                    <input type="tel" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="###-###-####" title="Numeric Values">
+                    <input type="tel" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="###-###-####" title="Numeric Values only. Eg: 8018018899">
                 </label>
             </fieldset>
             <fieldset  id="fs2">
                 <label id="label-businessname">Business Name*: 
-                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}"  required>
+                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}"  required title="Please enter at least 2 alphabetical Characters, can use - or spaces. Eg: My Company">
                 </label>
                 <label id="label-position">Position Title: 
                     <input type="text" minlength="7" pattern="[A-Za-z\s\-]{7,}" title="Please enter at least 7 alphabetical characters, hyphens or spaces" >
