@@ -67,20 +67,22 @@
         border-radius: 5vw;
         opacity: 90%;
     }
-    .title {
+
+    nav h1{
+        font-family: var(--heading-font);
+        font-size: 1.5em;
+        margin-bottom: 0vw;
         grid-column: 2/3;
         grid-row: 1/2;
         color: var(--accent5-color);
     }
-    .title h1{
-        font-family: var(--heading-font);
-        font-size: 1.5em;
-        margin-bottom: 0vw
-    }
-    .title h2{
+    nav h2{
         font-family: var(--paragraph-font);
         font-size: 0.8em;
         margin-top: 0vw;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        color: var(--accent5-color);
     }
     .navbar .socialmedia{
         grid-column: 4/5;
