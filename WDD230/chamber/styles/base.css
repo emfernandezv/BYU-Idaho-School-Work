@@ -618,8 +618,8 @@
         margin-top: -0.1em;
     }
     .cards img {
-        max-height: auto;
-        max-width: 95%;
+        height: auto;
+        width: 95%;
         margin-bottom: 30px;
     }
     
