@@ -697,11 +697,11 @@
     
     #searchInput {
         display: flex;
-        margin: 30px auto;
+        
         background-position: 10px 12px; 
         width: 230px; 
         font-size: 1rem; 
-        padding: 12px 20px 12px 20px; 
+        
         border: 1px solid #ddd; 
         border-radius: 20px;
       }
