@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kirkland Chamber of Commerce Project for BYU-I">
+    <meta name="description" content="Kirkland Chamber of Commerce Project for BYU-I - Directory Page">
     <title>Kirkland Chamber of Commerce</title>
     <link rel="icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
@@ -14,6 +14,8 @@
     <link href="./styles/large.css" rel="stylesheet">
     <script src="scripts/script.js" defer></script>
     <script src="scripts/counter.js" defer></script>
+    <script src="scripts/directory.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header class="header">
@@ -59,15 +61,17 @@
         </nav>
     </header>
 
-    <main class="thankyou-main">
-        <picture >
-            <source media="(max-width: 599px)"  srcset="./images/thankyou/welcome400.webp">
-            <source media="(max-width: 1023px)" srcset="./images/thankyou/welcome600.webp">
-            <source media="(min-width: 1024px)" srcset="./images/thankyou/welcome1024.webp">
-            <img src="./images/thankyou/welcome400.webp" alt="thanks" id="center">
-        </picture>
-        <h1>We will be getting in contact with you soon.</h1>
-        <h2>The new members process will take 2 days. We will guide you throught the process.</h2>
+    <main class="index-directory">
+        <h1>Business Directory</h1>
+        <div id="menu">
+            <button id="gridview" class="active"><i class="fa fa-th-large "></i></button> 
+            <button id="listview"><i class="fa fa-bars "></i></button>
+        </div>
+        <input type="text" id="searchInput" onkeyup="search()" placeholder="Search...">
+
+        <div class="cards"></div>
+        <div id="noBusinessFound">
+            <p>No Business Found</p>
     </main>
 
     <footer>

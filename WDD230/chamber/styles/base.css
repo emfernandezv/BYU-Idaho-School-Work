@@ -575,6 +575,138 @@
         margin-top: 0;
     }
 
+    /*DIRECTORY */
+    .index-directory{
+        margin: 1em 1em;
+    }
+    .index-directory h1,h2,p{
+        font-family: var(--paragraph-font);
+        text-align: center;
+    }
+    #menu{
+        display: flex;
+        justify-content:center;
+        margin-bottom: 1.5em;
+        gap: 1em;
+    }
+    #menu button{ 
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+    
+    #menu button:hover{
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    #menu button.active{
+        background-color: #31081f;
+        color: white;
+    }
+    
+    
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        padding: 0;
+
+    }
+    .cards img {
+        max-height: auto;
+        max-width: 95%;
+        margin-bottom: 30px;
+    }
+    
+    .cards h2{
+        display: none;
+    }
+
+    .cards #address,#phone {
+        font-size: 1em;
+    }
+    .cards section {
+        margin: 0.5rem;
+        padding: 0.35rem;
+        border-radius: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        width: auto;
+        border: solid 5px lightgray;
+    }
+    .cards section > p {
+        margin-top: 0px;
+        text-align: center;
+    }
+    
+    .cards a{
+        padding: 0 20px 20px;
+        word-break: break-all;
+    }
+    
+    .list{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .list section {
+        padding: 1rem;
+        background-color: #ffffff;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        width: auto;
+
+        }
+    
+    .list h2 {
+        display: block;
+        font-size: 1rem;
+    }
+    
+    .list section p{
+        font-size: 0.8em;
+        margin: 3px;
+        text-align: left;
+        
+    
+    }
+    
+    .list section a{
+        margin: 5px;
+    }
+    
+    .list img{
+        display: none;
+    
+    }
+    .list section:nth-child(even) {
+        background-color: #bcdac8;
+    }
+    
+    
+    #searchInput {
+        display: flex;
+        margin: 30px auto;
+        background-position: 10px 12px; 
+        width: 230px; 
+        font-size: 1rem; 
+        padding: 12px 20px 12px 20px; 
+        border: 1px solid #ddd; 
+        border-radius: 20px;
+      }
+    
+    #noBusinessFound{
+        font-size: 1.5rem;
+        color: #999;
+        font-style: italic;
+        text-align: center;
+        display: none;
+    }
 
     /* Footer*/
     footer{

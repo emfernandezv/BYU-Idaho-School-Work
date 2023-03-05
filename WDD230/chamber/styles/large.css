@@ -451,6 +451,39 @@
     .thankyou-main h2{
         font-size: 1.5em;
     }
+
+    /*DIRECTORY*/
+    .index-directory h1{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    #menu{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    #searchInput {
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+
+    .index-directory .cards{
+        grid-column: 1/4;
+        grid-row: 4/5;
+        margin-left: 8em;
+        margin-right: 8em;
+    }
+
+    .cards #address,#phone {
+        font-size: .8em;
+    }
+
+    .cards img{
+        height: auto;
+        width: 100%;
+    }
+
+
     /*FOOTER*/
     footer{
         font-size: 1.5vw;
