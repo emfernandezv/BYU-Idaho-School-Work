@@ -453,6 +453,10 @@
     }
 
     /*DIRECTORY*/
+    .index-directory {
+        grid-template-columns: 1fr;
+    }
+
     .index-directory h1{
         grid-column: 1/4;
         grid-row: 1/2;
@@ -470,8 +474,8 @@
     .index-directory .cards{
         grid-column: 1/4;
         grid-row: 4/5;
-        margin-left: 8em;
-        margin-right: 8em;
+        margin-left: 5em;
+        margin-right: 5em;
     }
 
     .cards #address,#phone {
@@ -481,6 +485,10 @@
     .cards img{
         height: auto;
         width: 100%;
+    }
+
+    section a{
+        font-size: 0.7em;
     }
 
 
@@ -506,17 +514,3 @@
         padding-top: 1vw;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
