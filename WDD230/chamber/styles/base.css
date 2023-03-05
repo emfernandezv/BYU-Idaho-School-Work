@@ -693,26 +693,6 @@
     .list section:nth-child(even) {
         background-color: var(--accent3-color);
     }
-    
-    
-    #searchInput {
-        display: flex;
-        
-        background-position: 10px 12px; 
-        width: 230px; 
-        font-size: 1rem; 
-        
-        border: 1px solid #ddd; 
-        border-radius: 20px;
-      }
-    
-    #noBusinessFound{
-        font-size: 1.5rem;
-        color: #999;
-        font-style: italic;
-        text-align: center;
-        display: none;
-    }
 
     /* Footer*/
     footer{
