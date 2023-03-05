@@ -461,7 +461,7 @@
         grid-column: 1/4;
         grid-row: 1/2;
     }
-    #menu{
+    #menu-directory{
         grid-column: 1/4;
         grid-row: 2/3;
     }
@@ -514,3 +514,17 @@
         padding-top: 1vw;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
