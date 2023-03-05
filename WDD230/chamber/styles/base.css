@@ -602,7 +602,7 @@
         background-color: rgba(0, 0, 0, 0.1);
     }
     #menu button.active{
-        background-color: #31081f;
+        background-color: var(--accent2-color);
         color: white;
     }
     
@@ -650,6 +650,9 @@
     .list{
         display: flex;
         flex-direction: column;
+        border: 1px solid;
+        border-radius: 1em;
+        
     }
     
     .list section {
@@ -660,7 +663,7 @@
         flex-direction: column;
         justify-content:center;
         width: auto;
-
+        margin: 1em;
         }
     
     .list h2 {
@@ -671,13 +674,12 @@
     .list section p{
         font-size: 0.8em;
         margin: 3px;
-        text-align: left;
-        
-    
+        text-align: center;
     }
     
     .list section a{
         margin: 5px;
+        text-align: center;
     }
     
     .list img{
@@ -685,7 +687,7 @@
     
     }
     .list section:nth-child(even) {
-        background-color: #bcdac8;
+        background-color: var(--accent3-color);
     }
     
     
