@@ -267,12 +267,12 @@
     .index-directory {
         grid-template-columns: 1fr;
     }
-    
+
     .index-directory h1{
         grid-column: 1/3;
         grid-row: 1/2;
     }
-    #menu{
+    #menu-directory{
         grid-column: 1/3;
         grid-row: 2/3;
     }
