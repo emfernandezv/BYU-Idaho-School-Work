@@ -474,8 +474,57 @@
         margin-right: 5em;
     }
 
-    .cards #address,#phone {
+    .cards #address,#phone,#membership {
         font-size: .8em;
+    }
+
+    
+    .banner{
+        display: none;
+        background-color: var(--accent4-color);
+    }
+    .banner__content{
+        text-align: center;
+        display: flex;
+        width: max-content;
+        margin: 0 auto;
+        padding: 1vw;
+    }
+    header .navbar{
+        display: grid;
+        grid-template-columns: 22vw auto 5vw;
+        grid-template-rows: auto auto 8vw;
+        padding-top: 2vw;
+    }
+    .navbar .nav-logo {
+        grid-column: 1/2;
+        grid-row:1/2;
+        width: 2vw;
+    }
+    #headerlogo{
+        height: 11vw;
+        margin-left: 8vw;
+        margin-top: 1vw;
+        background-color: var(--paragraph-color-on-color);
+        border-radius: 5vw;
+        opacity: 90%;
+    }
+    .title {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        color: var(--accent5-color);
+    }
+    nav h1{
+        font-family: var(--heading-font);
+        font-size: 1.5em;
+        margin-bottom: 0vw;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    navh2{
+        font-family: var(--paragraph-font);
+        font-size: 0.8em;
+        margin-top: 0vw;
     }
 
     .cards img{

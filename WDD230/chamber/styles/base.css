@@ -614,6 +614,16 @@
 
     }
 
+    .cards #membership{
+        border: 1px solid;
+        background-color:lightblue;
+        font-family: var(--paragraph-font);
+        color: var(--accent2-color);
+        font-weight: bolder;
+        border-radius: 5px;
+
+    }
+
     .cards :hover{
         margin-top: -0.1em;
     }

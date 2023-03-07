@@ -16,6 +16,7 @@ const displayCompanies = (companies) => {
         let address = document.createElement("p")
         let phone =  document.createElement("p");
         let url =  document.createElement("a");
+        let member =  document.createElement("p");
 
 
 
@@ -27,14 +28,32 @@ const displayCompanies = (companies) => {
         logo.setAttribute("loading", "lazy");
         url.setAttribute("href", company.websiteurl)
         url.textContent = `${company.websiteurl}`
-    
+
+        switch (company.membershiplevel){
+            case "1":
+                member.textContent = "Non-Profit Member"
+                break;
+            case "2":
+                member.textContent = "Bronze Member"
+                break;
+            case "3":
+                member.textContent = "Silver Member"
+                break;
+            case "4":
+                member.textContent = "Gold Member"
+                break;
+        }
+
+   
         address.setAttribute("id","address")
         phone.setAttribute("id","phone")
+        member.setAttribute("id","membership")
 
         card.appendChild(logo);
         card.appendChild(h2)
         card.appendChild(address);
         card.append(phone);
+        card.append(member);
         card.appendChild(url);
 
         cards.appendChild(card);

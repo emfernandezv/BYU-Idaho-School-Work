@@ -6,7 +6,7 @@
             "phone" : "+14254489868",
             "websiteurl" : "https://www.bacpagroup.com/",
             "image" : "https://cp7.cpasitesolutions.com/~bmrcpagr/images/Logo_Reverted.png",
-            "membershiplevel" : null  
+            "membershiplevel" : "3"  
         },
         {
             "name" : "AAA AIRCARE SYSTEMS",
@@ -14,7 +14,7 @@
             "phone" : "+14258202643",
             "websiteurl" : "https://www.aircaresystems.com/",
             "image" : "https://www.aircaresystems.com/uploads/8/5/4/9/85492008/aaa-aircare-restored-08-01-2016-15-01.jpg",
-            "membershiplevel" : null  
+            "membershiplevel" : "3"  
         },
         {
             "name" : "SWEENEY CONRAD, P.S.",
@@ -22,7 +22,7 @@
             "phone" : "+14256291990",
             "websiteurl" : "https://www.sweeneyconrad.com/",
             "image" : "https://www.sweeneyconrad.com/images/Sweeney-Conrad-logo.jpg",
-            "membershiplevel" : null  
+            "membershiplevel" : "4"  
         },
         {
             "name" : "MORGAN MECHANICAL INC",
@@ -30,7 +30,7 @@
             "phone" : "+14255820473",
             "websiteurl" : "https://hvacmorgan.com/",
             "image" : "https://hvacmorgan.com/wp-content/uploads/2022/03/MMI-Logo-2-AI.svg",
-            "membershiplevel" : null
+            "membershiplevel" : "3"
         },
         {
             "name" : "BOB'S HEATING & AIR CONDITIONING",
@@ -38,7 +38,7 @@
             "phone" : "+18008403346",
             "websiteurl" : "https://www.bobsheating.com/",
             "image" : "https://www.bobsheating.com/templates/yootheme/cache/b0/BobsLogo-White_Ring-b05072ef.webp",
-            "membershiplevel" : null
+            "membershiplevel" : "3"
         },
         {
             "name" : "EASTSIDE AUTOMOTIVE & TIRE",
@@ -46,7 +46,7 @@
             "phone" : "+14258278686",
             "websiteurl" : "https://www.eastsideautomotive.com/",
             "image" : "https://www.eastsideautomotive.com/Portals/20/logo_client.png?ver=2020-04-02-133301-830",
-            "membershiplevel" : null
+            "membershiplevel" : "2"
         },
         {
             "name" : "LINE-X OF KIRKLAND",
@@ -54,7 +54,7 @@
             "phone" : "+14258205809",
             "websiteurl" : "https://www.linexps.com/",
             "image" : "https://images.squarespace-cdn.com/content/v1/5fd92ad7ab943321efbb1f5f/1608068289856-1JKEDAF2LO5YETOD4S2P/logo_linex+%281%29.png?format=1500w",
-            "membershiplevel" : null
+            "membershiplevel" : "2"
         },
         {
             "name" : "IDENS DEALER SERVICES",
@@ -62,7 +62,7 @@
             "phone" : "+14252262805",
             "websiteurl" : "https://www.idensdealerservices.com/",
             "image" : "https://www.idensdealerservices.com/wp-content/uploads/Idens-Logo-1.png",
-            "membershiplevel" : null
+            "membershiplevel" : "4"
         },
         {
             "name" : "FETCH KIRKLAND",
@@ -70,7 +70,7 @@
             "phone" : "+14255224559",
             "websiteurl" : "https://www.fetchcb.com/",
             "image" : "https://images.squarespace-cdn.com/content/v1/5fd2fbe04005bd22c18feff5/1613082975078-C4X4PR77ZLPPMBEELH8A/FETCH_CANNONBEACH_BLUE.png?format=1500w",
-            "membershiplevel" : null
+            "membershiplevel" : "3"
         },
         {
             "name" : "RAIRDON'S DODGE CHRYSLER JEEP OF KIRKLAND",
@@ -78,7 +78,7 @@
             "phone" : "+12067796763",
             "websiteurl" : "https://www.dodgechryslerjeepofkirkland.com/",
             "image" : "https://www.dodgechryslerjeepofkirkland.com/wp-content/themes/DealerInspireDealerTheme/images/logo-head.png?ver=1670616261",
-            "membershiplevel" : null
+            "membershiplevel" : "4"
         },
         {
             "name" : "VOLKSWAGEN OF KIRKLAND",
@@ -86,7 +86,7 @@
             "phone" : "+14258982500",
             "websiteurl" : "https://www.vwofkirkland.com/",
             "image" : "https://www.vwofkirkland.com/assets/d2912/img/header/new-logo.png",
-            "membershiplevel" : null
+            "membershiplevel" : "4"
         },
         {
             "name" : "T. ANTHONY JEWELERS",
@@ -94,7 +94,7 @@
             "phone" : "+12069102670",
             "websiteurl" : "https://tanthonyjewelers.com/",
             "image" : "https://tanthonyjewelers.com/wp-content/uploads/2022/03/tanthony-logo.svg",
-            "membershiplevel" : null
+            "membershiplevel" : "3"
         }
     ]
 }
