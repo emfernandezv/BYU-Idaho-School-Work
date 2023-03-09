@@ -759,10 +759,10 @@
         padding-top: 2vw;
         color: white;
     }
-    #footerText h1{
+    .footerText h1{
         margin-bottom: 0;
         margin-top: 1vw;
-        font-size: 0.8em;
+        font-size: 0.7em;
         color: white;
     }
     #location {
@@ -773,10 +773,7 @@
     #location a{
         color: white;
     }
-    #location h4{
-        margin-bottom: 0.5vw;
-        margin-top: 1vw;
-    }
+
     .info2,.label,.visits  {
         color: white;
         font-size: 0.8em;
