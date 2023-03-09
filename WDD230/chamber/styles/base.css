@@ -148,6 +148,7 @@
         text-align: center;
         grid-template-rows: repeat(3,auto);
         margin: 0;
+        display: grid;
     }
     .dateblock #date{
         grid-row:2/3;
