@@ -7,5 +7,3 @@ if (t <= 50 && s >3 ){
 }else{
     document.getElementById("windchill").innerText = "N/A"
 }
-
-
