@@ -30,13 +30,7 @@
         grid-row: 1/2;
         color: var(--accent5-color);
     }
-    nav h1{
-        font-family: var(--heading-font);
-        font-size: 1.5em;
-        margin-bottom: 0vw;
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
+
     nav h2{
         font-family: var(--paragraph-font);
         font-size: 0.8em;
@@ -51,12 +45,7 @@
     section a{
         font-size: 0.7em;
     }
-
-    .title h1{
-        font-size: 3.2vw;
-        margin-top: 1vw;
-    }
-    .navbar .socialmedia{
+   .navbar .socialmedia{
         grid-column: 4/5;
         margin-left: 0;
     }
