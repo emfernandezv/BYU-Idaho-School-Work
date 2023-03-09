@@ -45,8 +45,8 @@ const aList = {
             lessionPage: './lesson09/prophets.html'
         },
         {   lessonNumber:'10',
-            lessonTitle:'Tittle 10',
-            lessionPage: 'Page 10'
+            lessonTitle:'W10 🏃🏽‍♂️ Weather API',
+            lessionPage: './lesson10/weather-api.html'
         },
         {   lessonNumber:'11',
             lessonTitle:'Tittle 11',
