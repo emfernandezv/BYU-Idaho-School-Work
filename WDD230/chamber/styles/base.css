@@ -759,9 +759,11 @@
         padding-top: 2vw;
         color: white;
     }
-    #footerText h4{
+    #footerText p{
         margin-bottom: 0;
         margin-top: 1vw;
+        font-size: 0.8em;
+        color: white;
     }
     #location {
         padding-top: 2vw;
