@@ -1,69 +1,38 @@
 @media only screen and (min-width: 64em){
     main{
-        display: grid;
         grid-template-columns: 20vw auto 20vw;
         grid-template-rows: auto;
         font-size: 1.5em;
     }
-
     header .navbar{
-        display: grid;
-        grid-template-columns: 22vw auto 5vw;
         grid-template-rows: auto auto 4vw;
-        padding-top: 2vw;
     }
-    .navbar .nav-logo {
-        grid-column: 1/2;
-        grid-row:1/2;
-        width: 2vw;
-    }
-    #headerlogo{
-        height: 11vw;
-        margin-left: 8vw;
-        margin-top: 1vw;
-        background-color: var(--paragraph-color-on-color);
-        border-radius: 5vw;
-        opacity: 90%;
-    }
-    .title {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        color: var(--accent5-color);
-    }
-
     nav h2{
         font-family: var(--paragraph-font);
         font-size: 0.8em;
         margin-top: 0vw;
     }
-
     .cards img{
         height: auto;
         width: 100%;
     }
-
     section a{
         font-size: 0.7em;
     }
    .navbar .socialmedia{
-        grid-column: 4/5;
-        margin-left: 0;
+    grid-column: 3/5;
+        margin-left: 30vw;
     }
     .sociallogo{
         height: 2.5vw;
         margin-top: 1vw;
-        padding-top: 0;
-        padding-left: 0;
-        margin-left: 1vw;
+        margin-left: 1em;
     }
     .title h2{
         font-size: 3vw;
     }
     .nav-menu{
         grid-column: 1/5;
-        grid-row: 2/3;
-        padding-bottom: 0;
-        margin-bottom: 0;
         display: grid;
         grid-template-columns: repeat(4,auto);
         margin-top: 1vw;
@@ -77,16 +46,10 @@
     }
     .navbar .dateblock{
         grid-column: 1/5;
-        margin-top: 0vw;
-        padding-top: 0;
-
-        
     }
     .dateblock #date{
         font-size: 1vw;
-        height: 2vw;
-        margin-top: 0;
-        padding-top: 1vw;
+
     }
 
     /*MAIN SECTION*/
@@ -119,7 +82,7 @@
         margin-left: 0;
         margin-right: var(--div-spacing);
         margin-bottom: var(--div-spacing);
-        grid-template-columns: auto auto;
+
         grid-template-rows: 2vw 5vw 2vw 2vw;
 
     }
@@ -134,7 +97,9 @@
         grid-column: 1/2;
         grid-row: 2/3;
         padding-top: 1vw;
+        margin-left: 3vw;
     }
+ 
     #weathervalue{
         grid-column: 2/3;
         grid-row: 2/3;
@@ -147,7 +112,6 @@
     #weathertext{
         font-size: 1vw;
         padding-top: 1.5vw;
-        ;
     }
     #v1 {
         margin-top: 1em;

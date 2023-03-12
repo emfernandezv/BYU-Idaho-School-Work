@@ -1,177 +1,116 @@
 @media only screen and (min-width: 37.5em) {
-    
+    header .navbar{
+            grid-template-columns: 20vw auto 30vw;
+            grid-template-rows: auto auto 10vw;
+     }
+    .nav-menu{
+       grid-column: 1/4;
+       grid-row: 2/3;
+    }
+    .nav-menu a {
+        font-size: 1em;
+    }
+    .navbar .socialmedia{
+        grid-column: 3/4;
+        margin-left: 6vw;
+    }
+    .sociallogo{
+        margin-top: 0;
+    }
+    li{
+        width: 100%;
+        font-size: 1.5em;
+    }
+    a{
+        text-decoration: none;
+    }
+    .title h2{
+        font-size: 1.5em;
+    }
+    .navbar .dateblock{
+        grid-column: 1/4;
+    }
+    .dateblock #date{
+        font-size: 1.5em;
+        height: 5vw;
+        height: auto;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+    }
+    /*MAIN GENERAL STYLES*/
     main{
         grid-template-columns:repeat(2,auto);
         grid-template-rows: repeat(6,auto);
         font-size: 1em;
     }
-
-    header .navbar{
-            display: grid;
-            grid-template-columns: 20vw auto 30vw;
-            grid-template-rows: auto auto 10vw;
-            align-items: center;
-
-    }
-
-    .nav-menu{
-       grid-column: 1/4;
-       grid-row: 2/3;
-       padding-left: 0;
-       padding-top: 0;
-    }
-
-    .nav-menu a {
-        font-size: 1em;
-    }
-
-
-    .navbar .socialmedia{
-        grid-column: 3/4;
-        margin-left: 6vw;
-    }
-
-    .sociallogo{
-        height: 8vw;
-        padding-top: 0;
-        padding-top: 0;
-        margin-top: 0;
-    }
-
-    li{
-        width: 100%;
-        font-size: 1.5em;
-    }
-
-    a{
-        text-decoration: none;
-    }
-
-    .title h2{
-        font-size: 1.5em;
-    }
-
-
-
-    .navbar .dateblock{
-        grid-column: 1/4;
-    }
-
-    .dateblock #date{
-        font-size: 1.5em;
-        height: 5vw;
-    }
-
-
     #hero{
         grid-column: 1/3;
-        grid-row: 1/2;
     }
-
     #hero a{
-        margin-bottom: 2vw;
-        margin-top: 35vw;
         left: 3em;
     }
-
     #news {
         grid-column: 1/3;
         grid-row: 2/3;
     }
-
     #spot {
         grid-column: 1/3;
         grid-row: 3/4;
         grid-template-columns: repeat(2,auto);
     }
-
     #spot #class1{
         grid-column: 1/2;
-
     }
-
     #class1 img{
         height: 6em;
     }
-
-
     #spot #class2{
         grid-column: 2/3;
-
     }
-
     #class2 img{
         height: 6em;
     }
- 
-
     #join {
         grid-column: 1/3;
         grid-row: 4/5;
         display: grid;
-        height: auto;
-        border: solid #A0A0A0;
-        background-color:#E0E0E0;
-        padding-left: var(--div-spacing);
-        padding-top: var(--div-spacing);
-        margin-bottom: var(--div-spacing);
-        text-align: center;
     }
-
     #event {
-        grid-column: 1/2;
         grid-row: 5/6;
-        margin-top: var(--div-spacing);
-        margin-bottom: 0vw;
-        width: fit-content;
     }
-
     #event p{
         font-size: 1.5em;
     }
-
     #weather{
         grid-column: 2/3;
         grid-row: 5/6;
         margin-left: var(--div-spacing);
         margin-top: var(--div-spacing);
         margin-bottom: 0vw;
-        grid-template-columns: auto auto;
         text-align: center;
-
     }
-
     #weather img{
         height: 5em;
-        padding-left: 5vw;
     }
-
     #weathervalue{
         font-size: 2em;
     }
-
     #weathertext{
         font-size: 3vw;
         margin-top: 0;
         margin-bottom: 0;
     }
-
     #v{
         margin-bottom: 1.5vw;
     }
-    
     #v h4{
         font-size: 2vw;
     }
     .places:hover{
         opacity: 0.9;
     }
-
     /*MAIN JOIN*/
-    .join-main form{
-        grid-template-columns: auto;
-    }
-    .join-main label{
+   .join-main label{
         font-size: 1em;
     }
     .join-main input{
@@ -185,39 +124,27 @@
     }
     .join-main #fs1{
         grid-template-columns: auto auto;
-        grid-row: 1/2;
     }
     .join-main #label-firstname{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        display: grid;
         margin-right: 1em;
     }
     .join-main #label-lastname{
         grid-column: 2/3;
         grid-row: 1/2;
-        display: grid;
     }
     .join-main #label-email{
-        grid-column: 1/2;
         grid-row: 2/3;
-        display: grid;
         margin-right: 1em;
     }
     .join-main #label-cellphone{
         grid-column: 2/3;
         grid-row: 2/3;
-        display: grid;
-
     }
     .join-main #fs2{
         grid-template-columns: auto auto;
-        grid-row: 2/3;
     }
     .join-main #label-businessname{
-        grid-column: 1/2;
         grid-row: 1/2;
-        display: grid;
         margin-right: 1em;
     }
     .join-main #label-position{
@@ -227,27 +154,21 @@
     .join-main #label-membership{
         grid-column: 1/3;
         grid-row: 7/8;
-        display: grid;
     }
     .join-main #label-businessdesc{
         grid-column: 1/3;
         grid-row: 9/10;
-        display: grid;
     }
     .table-base{
         display: grid;
         border: 1px solid;
     }
-
-
-
     .join-main ul{
         font-size: 0.7em;
     }
     .join-main #submit{
         font-size: 1.5em;
     }
-
     .thankyou-main h1{
         font-size: 3em;
     }
@@ -256,11 +177,9 @@
     }
 
     /*DIRECORY*/
-
     .index-directory {
         grid-template-columns: 1fr;
     }
-
     .index-directory h1{
         grid-column: 1/3;
         grid-row: 1/2;
@@ -269,45 +188,30 @@
         grid-column: 1/3;
         grid-row: 2/3;
     }
-
     .index-directory .cards{
         grid-column: 1/3;
         grid-row: 3/4;
     }
-
     .cards img{
         width: 95%;
     }
-
     .cards #address,#phone {
         font-size: 1.1em;
     }
-
     /*FOOTER*/
     footer{
         font-size: 1em;
         font-weight: bolder;
     }
-    
-    #footerlogo{
-        margin-top: 2.5vw;
-        height: 7vw;
-        margin-left: 6vw;
-    }
-
-    
     #footerTextCompany {
         padding-top: 2.5vw;
     }
-
     #location {
         padding-top: 3vw;
     }
-
     .visits{
         font-size: 1.5em;
     }
-
     footer h1{
         font-size: .8em;
     }
