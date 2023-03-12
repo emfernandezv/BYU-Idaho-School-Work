@@ -438,7 +438,11 @@
         font-size: .8em;
     }
 
-    
+    .cards h3{
+        display: grid;
+        font-size: 0.7em;
+        text-align: center;
+    }
     .banner{
         display: none;
         background-color: var(--accent4-color);

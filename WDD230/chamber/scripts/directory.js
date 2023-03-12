@@ -11,38 +11,40 @@ const displayCompanies = (companies) => {
     const cards = document.querySelector("div.cards");
     companies.forEach((company) => {
         let card = document.createElement("section");
-        let h2 = document.createElement("h2");
+        let h3 = document.createElement("h3");
         let logo = document.createElement("img");
         let address = document.createElement("p")
         let phone =  document.createElement("p");
         let url =  document.createElement("a");
-        let member =  document.createElement("h2");
+        let member =  document.createElement("h3");
 
 
 
-        h2.textContent = `${company.name}`;
+        h3.textContent = `${company.name}`;
         address.textContent = `${company.address}`;
         phone.textContent = `${company.phone}`;
         logo.setAttribute("src", company.image);
         logo.setAttribute("alt", `${company.name}'s Logo`);
         logo.setAttribute("loading", "lazy");
         url.setAttribute("href", company.websiteurl)
-        url.textContent = `${company.websiteurl}`
+        url.textContent = `Website`
 
         switch (company.membershiplevel){
             case "1":
-                member.textContent = "Non-Profit Member"
+                member.textContent = "Non-Profit \n Member"
                 break;
             case "2":
-                member.textContent = "Bronze Member"
+                member.textContent = "Bronze \n Member"
                 break;
             case "3":
-                member.textContent = "Silver Member"
+                member.textContent = "Silver \n Member"
                 break;
             case "4":
-                member.textContent = "Gold Member"
+                member.textContent = "Gold \n Member"
                 break;
         }
+
+        member.innerHTML = member.innerHTML.replace('\n', '<br />');
 
    
         address.setAttribute("id","address")
@@ -50,7 +52,7 @@ const displayCompanies = (companies) => {
         member.setAttribute("id","membership")
 
         card.appendChild(logo);
-        card.appendChild(h2)
+        card.appendChild(h3)
         card.appendChild(address);
         card.append(phone);
         card.append(member);

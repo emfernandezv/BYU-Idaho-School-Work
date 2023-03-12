@@ -414,7 +414,7 @@
     .discover-main table td{
        text-align: center;
     }
-    
+
     
     /*MAIN JOIN*/
     .join-main{
@@ -620,6 +620,7 @@
 
     }
 
+
     .cards #membership{
         border: 1px solid;
         background-color:lightblue;
@@ -627,7 +628,10 @@
         color: var(--accent2-color);
         font-weight: bolder;
         border-radius: 5px;
-
+        text-align: center;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        width: 100%;
     }
 
     .cards :hover{
@@ -637,9 +641,10 @@
         height: auto;
         width: 95%;
         margin-bottom: 30px;
+        margin-top: 1em;
     }
     
-    .cards h2{
+    .cards h3{
         display: none;
     }
 
