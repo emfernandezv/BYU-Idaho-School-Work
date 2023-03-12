@@ -16,7 +16,7 @@ const displayCompanies = (companies) => {
         let address = document.createElement("p")
         let phone =  document.createElement("p");
         let url =  document.createElement("a");
-        let member =  document.createElement("p");
+        let member =  document.createElement("h2");
 
 
 
