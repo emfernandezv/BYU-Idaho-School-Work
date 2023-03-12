@@ -1,4 +1,4 @@
-    // select HTML elements in the document
+// select HTML elements in the document
 const currentTemp = document.getElementById('grade');
 const weatherIcon = document.getElementById('weather-icon');
 const captionDesc = document.getElementById('weathertext');
