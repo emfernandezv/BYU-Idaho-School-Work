@@ -221,24 +221,6 @@
         grid-column: 2/10;
         grid-row: 2/3;
     }
-    #place1-text{
-        display:none;
-        grid-column: 2/10;
-        grid-row: 2/3;
-        
-    }
-    #place2-text{
-        display: none;
-    }
-    #place3-text{
-        display: none;
-    }
-    #place4-text{
-        display: none;
-    }
-    #place5-text{
-        display: none;
-    }
     #place1 img p{
         width: 70%;
     }
