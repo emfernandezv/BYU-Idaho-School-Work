@@ -635,7 +635,7 @@
     }
 
     .cards :hover{
-        margin-top: -0.1em;
+        border-color: #8b1e3f;
     }
     .cards img {
         height: auto;
