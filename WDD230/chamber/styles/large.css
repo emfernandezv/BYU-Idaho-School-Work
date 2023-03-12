@@ -82,8 +82,7 @@
         margin-left: 0;
         margin-right: var(--div-spacing);
         margin-bottom: var(--div-spacing);
-
-        grid-template-rows: 2vw 5vw 2vw 2vw;
+        
 
     }
     #weather h2{
@@ -103,21 +102,27 @@
     #weathervalue{
         grid-column: 2/3;
         grid-row: 2/3;
-        font-size: 3vw;
         text-align: left;
         margin-top: 1.2vw;
-        margin-bottom: 0;
-        padding-bottom: 0;
+ 
+    }
+    #v{
+        display: inline;
     }
     #weathertext{
-        font-size: 1vw;
         padding-top: 1.5vw;
     }
     #v1 {
         margin-top: 1em;
     }
-    #v h4{
-        font-size: 1vw;
+    .wind-text{
+        font-size: 3vw;
+    }
+    .wind-desc{
+        font-size: 1.5vw;
+    }
+    .wind-val{
+        font-size: 0.9vw;
     }
     #join {
         grid-column: 1/2;

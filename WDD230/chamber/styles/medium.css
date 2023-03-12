@@ -92,19 +92,21 @@
     #weather img{
         height: 5em;
     }
-    #weathervalue{
-        font-size: 2em;
-    }
     #weathertext{
-        font-size: 3vw;
         margin-top: 0;
         margin-bottom: 0;
     }
     #v{
         margin-bottom: 1.5vw;
     }
-    #v h4{
-        font-size: 2vw;
+    .wind-text{
+        font-size: 7vw;
+    }
+    .wind-desc{
+        font-size: 4vw;
+    }
+    .wind-val{
+        font-size: 3vw;
     }
     .places:hover{
         opacity: 0.9;

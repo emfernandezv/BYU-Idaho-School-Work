@@ -1,8 +1,9 @@
-// select HTML elements in the document
+    // select HTML elements in the document
 const currentTemp = document.getElementById('grade');
 const weatherIcon = document.getElementById('weather-icon');
 const captionDesc = document.getElementById('weathertext');
-const windSpeed = document.getElementById("windspeed")
+const windSpeed = document.getElementById("v1")
+const windChill = document.getElementById("v2")
 
 const url =   "https://api.openweathermap.org/data/2.5/weather?q=kirkland&appid=df316398a3c9e783d731138fffc20584&units=imperial"
 
@@ -40,13 +41,13 @@ function  displayResults(weatherData) {
     //setting descripcion
     captionDesc.textContent = desc.toUpperCase();
     //setting wind speed
-    windSpeed.innerText = wind;
+    windSpeed.innerText = `Wind Speed: ${wind} M/H`;
     //calculating & the wind chell
     if (temp <= 50 && windSpeed > 3 ){
         let factor = 35.74 + 0.6215 * temp - (35.75 * Math.pow(windSpeed,0.16)) + (0.4275 * temp * Math.pow(windSpeed,0.16))
-        document.getElementById("windchill").innerText = factor.toFixed(1)
+        windChill.innerText = `Wind Chill: ${factor.toFixed(1)}`
     }else{
-        document.getElementById("windchill").innerText = "N/A"
+        windChill.innerText = "Wind Chill: N/A"
     }
 }
 
