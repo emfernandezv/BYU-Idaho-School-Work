@@ -405,7 +405,7 @@
         width: 100%;  height: auto; 
     }
     .discover-main .paragraph {
-        text-align: justify;
+        text-align: left;
     }
     .discover-main .paragraph table{
         border: solid gray;
