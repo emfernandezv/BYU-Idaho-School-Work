@@ -584,7 +584,7 @@
     .index-directory{
         margin: 1em 1em;
     }
-    .index-directory h1,h2,p{
+    .index-directory h1,h2{
         font-family: var(--paragraph-font);
         text-align: center;
     }
