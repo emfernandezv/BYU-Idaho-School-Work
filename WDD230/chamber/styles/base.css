@@ -679,11 +679,8 @@
     .list{
         display: flex;
         flex-direction: column;
-        border: 1px solid;
-        border-radius: 1em;
-        
     }
-    
+   
     .list section {
         padding: 1rem;
         background-color: #ffffff;
@@ -692,12 +689,21 @@
         flex-direction: column;
         justify-content:center;
         width: auto;
-        margin: 1em;
-        }
-    
-    .list h2 {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        border: 5px solid;
+        border-radius: 1em;
+        border-color: lightgrey;
+    }
+    .list section:hover{
+        border-color: #8b1e3f;
+       
+    }
+    .list h3,h4 {
         display: block;
         font-size: 1rem;
+        text-align: center;
     }
     
     .list section p{
