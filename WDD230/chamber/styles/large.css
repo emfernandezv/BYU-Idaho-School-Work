@@ -438,7 +438,7 @@
         font-size: .8em;
     }
 
-    .cards h3{
+    .cards h3,h4{
         display: grid;
         font-size: 0.7em;
         text-align: center;
