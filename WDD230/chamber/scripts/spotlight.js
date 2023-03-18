@@ -25,7 +25,7 @@ function displayData(businesses, container) {
 
     name.textContent = businesses[rand.toFixed(0)].name;
     logo.setAttribute('src', businesses[rand.toFixed(0)].image);
-    logo.setAttribute('alt', businesses[rand.toFixed(0)].name);
+    logo.setAttribute('alt', `${businesses[rand.toFixed(0)].name} Logo`);
     email.textContent = businesses[rand.toFixed(0)].email;
     link.setAttribute('href', `mailto:${businesses[rand.toFixed(0)].email}`);
     
