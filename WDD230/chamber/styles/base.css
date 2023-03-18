@@ -319,17 +319,24 @@
         display: grid;
         margin-bottom: var(--div-spacing);
         text-align: center;
+        height: auto;
     }
-    #spot a{
-        color: var(--accent2-color);
-    }
-    #spot .subspot{
+    
+    .subspot{
         border: solid #A0A0A0;
         height: auto;
         margin-bottom: 0.3vw;
     }
+    .subspot h3{
+       margin-top:0.5em;
+       margin-bottom:0.5em;
+    }
+    .subspot a{
+        color: var(--accent2-color);
+    }
     #spot img{
-        height: 25vw;
+        height: 8vw;
+        width: auto;
     }
     #spot #class3{
         display: none;
