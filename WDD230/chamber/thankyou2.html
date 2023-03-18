@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kirkland Chamber of Commerce Project for BYU-I - Contact Us Page">
+    <meta name="description" content="Kirkland Chamber of Commerce Project for BYU-I - Thank You Page">
     <title>Kirkland Chamber of Commerce</title>
     <link rel="icon" href="./images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
@@ -61,33 +61,13 @@
         </nav>
     </header>
 
-    <main class="contactus-main">
-        <form class="contactus-form" method="get" action="thankyou2.html">
-            <fieldset id="contact-fs1">
-                <legend>Contact Form</legend>
-                <label id="name">Your Name*:
-                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}"  required title="Please enter at least 2 alphabetical characters , can use - or spaces. Eg: Joe" >
-                </label>
-                <label id="email">E-mail*: 
-                    <input type="text" pattern="[A-Za-z^@\s]+@[A-Za-z^@\s]+\.[^@\s]+" required placeholder="email@mail.com" title="Must contain @ and . Eg: email@mail.com">
-                </label>
-                <label id="text">Question/Concern*: 
-                    <textarea id="text-box" name="text-field" rows="5" cols="50" placeholder="How can we help you?" required></textarea>
-                    <input type="hidden" id="datetime" name="date" value="CurrentDateTime"> 
-                </label>
-            </fieldset>
-            <input id="submit" type="submit" value="Submit">
-        </form>
-        <div id="contactus-info">
-            <h2>Contact Us</h2>
-            <h3>Address</h3>
-            <p>400 Urban Plz Suite 135, Kirkland, WA 98033</p>
-            <h3>Phone</h3>
-            <p>(801) 555-5555</p>
-            <h3>Email</h3>
-            <a href="info@kirklandcc.org" type="email">info@kirklandcc.org</a>
-        </div>
- 
+    <main class="thankyou-main">
+        <picture >
+            <source media="(max-width: 599px)"  srcset="./images/thankyou/Thankyou400.webp">
+            <source media="(max-width: 1023px)" srcset="./images/thankyou/Thankyou600.webp">
+            <source media="(min-width: 1024px)" srcset="./images/thankyou/Thankyou1024.webp">
+            <img src="./images/thankyou/thankyou400.webp" alt="thanks" id="center">
+        </picture>
     </main>
 
     <footer>

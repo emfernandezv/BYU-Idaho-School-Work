@@ -325,6 +325,7 @@
         margin-right: 0.5em;
         padding-bottom: 0;
         margin-bottom: 0.5em;
+        width: 50%;
     }
     .join-main #label-firstname{
         grid-column: 1/2;
@@ -457,8 +458,26 @@
         padding: 1vw;
     }
     
-
-
+/*contact us main*/
+.contactus-main{
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+.contactus-main #contactus-form{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: auto;
+}
+#contactus-form #name{
+    width: 50%;
+}
+.contactus-main #contactus-info{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 0.5em;
+    margin-left: 1em;
+    width: auto;
+}
     /*FOOTER*/
     footer{
         font-size: 1.5vw;
