@@ -1,0 +1,35 @@
+@media only screen and (min-width: 64em){
+
+    /*HEADER*/
+    .nav-menu{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        margin-top: 1vw;
+        width: auto;
+    }
+    .nav-menu li:first-child {
+        display: none;
+    }
+    .nav-menu li {
+        display: inline;
+        padding: 0;
+    }
+
+
+    /*MAIN INDEX*/
+    #cards {
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: auto;
+    }
+    #weather {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-left: 0.5em;
+    }
+    #shipping {
+        display: grid;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-left: 0.5em;
+    }
+}
