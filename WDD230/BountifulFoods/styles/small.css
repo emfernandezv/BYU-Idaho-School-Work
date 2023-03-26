@@ -100,11 +100,11 @@ nav {
     /*FOOTER*/
     footer {
         background-color: var(--accent5-color);
-        font-family: var(--font-1); 
+        font-family: var(--font-2); 
         display: grid;
         grid-template-columns: repeat(2,auto);
         grid-template-rows: repeat(2,auto);
-        color: var(--font-color-2);
+        color: var(--font-color-1);
     }
     footer #footer-content{
         grid-column: 1/2;
