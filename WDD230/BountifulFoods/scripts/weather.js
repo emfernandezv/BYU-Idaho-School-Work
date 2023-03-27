@@ -58,5 +58,31 @@ const lastValue = localStorage.getItem('qDrinks');
 if (lastValue > 0) {
     drinksCreated.innerText = lastValue;
 }else{
-    drinksCreated.innerText = "NONE";
+    drinksCreated.innerText = "NO";
 }
+
+
+var slidePosition = 0;
+SlideShow();
+
+// forward/Back controls
+function plusSlides(n) {
+  SlideShow(slidePosition += n);
+}
+
+//  images controls
+function currentSlide(n) {
+  SlideShow(slidePosition = n);
+}
+
+function SlideShow() {
+    var i;
+    var slides = document.getElementsByClassName("Containers");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slidePosition++;
+    if (slidePosition > slides.length) {slidePosition = 1}
+    slides[slidePosition-1].style.display = "block";
+    setTimeout(SlideShow, 3000); // Change image every 3 seconds
+  } 
