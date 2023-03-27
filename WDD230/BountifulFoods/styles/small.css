@@ -366,14 +366,7 @@ html {
     font-weight: 200;
     font-size: var(--font-size-parragraph);
 }
-#explore ul{
-    font-family: var(--font-2);
-    font-weight: bold;
-}
-#explore li{
-    font-family: var(--font-2);
-    font-weight: 200;
-}
+
 /*ABOUT US*/
 #main-aboutus{
     display: grid;
@@ -399,15 +392,15 @@ html {
     float: left;
     margin-right: 1em;
 }
-#main-aboutus ul{
+.lititle{
     font-family: var(--font-2);
     font-weight: bold;
     font-size: var(--font-size-parragraph);
 }
-#main-aboutus li{
+.liparagraph{
     font-family: var(--font-2);
     font-weight: 100;
-    font-size: var(--font-size-parragraph2);
+    font-size: var(--font-size-parragraph);
 }
 
 }
