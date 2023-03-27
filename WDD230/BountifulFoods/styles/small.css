@@ -21,6 +21,7 @@
   --font-size-h3: 1.3em;
   --font-size-h4: 1em;
   --font-size-parragraph: 1.3em;
+  --font-size-parragraph2: 1em;
 
   --font-color-1: black;
   --font-color-2: white;
@@ -334,4 +335,79 @@ html {
 .link{
     float: right;
 }
+#explore{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: grid;
+    border: solid 2px var(--accent4-color);
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: var(--accent2-color);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+#explore h2{
+    font-style: italic;
+    font-family: var(--font-1);
+    font-size: var(--font-size-h2);
+    text-shadow: var(--accent1-color) 1px 0 10px;
+}
+#explore h3{
+    text-decoration: underline;
+    font-family: var(--font-2);
+    font-size: var(--font-size-h2);
+    text-align: center;
+    text-shadow: var(--accent4-color) 1px 0 10px;
+}
+#explore p{
+    font-family: var(--font-2);
+    font-weight: 200;
+    font-size: var(--font-size-parragraph);
+}
+#explore ul{
+    font-family: var(--font-2);
+    font-weight: bold;
+}
+#explore li{
+    font-family: var(--font-2);
+    font-weight: 200;
+}
+/*ABOUT US*/
+#main-aboutus{
+    display: grid;
+    border: solid 2px var(--accent4-color);
+    border-radius: 5px;
+    margin: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: var(--accent2-color);
+}
+#main-aboutus p{
+    font-family: var(--font-2);
+    font-weight: 200;
+    font-size: var(--font-size-parragraph);
+}
+#main-aboutus h2{
+    font-style: italic;
+    font-family: var(--font-1);
+    font-size: var(--font-size-h2);
+    text-shadow: var(--accent1-color) 1px 0 10px;
+}
+#aboutusimg2{
+    float: left;
+    margin-right: 1em;
+}
+#main-aboutus ul{
+    font-family: var(--font-2);
+    font-weight: bold;
+    font-size: var(--font-size-parragraph);
+}
+#main-aboutus li{
+    font-family: var(--font-2);
+    font-weight: 100;
+    font-size: var(--font-size-parragraph2);
+}
+
 }
