@@ -31,7 +31,7 @@ function  displayResults(weatherData) {
     // getting the description
     const desc = weatherData.weather[0].description;
     //getting the humidity
-    const humidity = weatherData.main.temp.toFixed(0);
+    const humidity = weatherData.main.humidity.toFixed(0);
 
     //setting the temp
     currentTemp.innerHTML = `<strong>${temp}</strong>`;
@@ -40,15 +40,9 @@ function  displayResults(weatherData) {
     weatherIcon.setAttribute('alt', desc.toUpperCase());
     //setting descripcion
     captionDesc.textContent = desc.toUpperCase();
-    //setting wind speed
+    //setting humidity
     humidityVal.innerText = humidity;
-    //calculating & the wind chell
-    if (temp <= 50 && windSpeed > 3 ){
-        let factor = 35.74 + 0.6215 * temp - (35.75 * Math.pow(windSpeed,0.16)) + (0.4275 * temp * Math.pow(windSpeed,0.16))
-        windChill.innerText = `Wind Chill: ${factor.toFixed(1)}`
-    }else{
-        windChill.innerText = "Wind Chill: N/A"
-    }
+
 }
 
 // DRINK COUNTER
