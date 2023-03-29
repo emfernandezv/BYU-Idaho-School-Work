@@ -1,11 +1,11 @@
 
-async function getPartnerData(){
+async function getCompanyData(){
     const response = await fetch("data.json");
     const data = await response.json();
     displayCompanies(data.companies)
 
 }
-getPartnerData();
+getCompanyData();
 
 const displayCompanies = (companies) => {
     const cards = document.querySelector("div.cards");
@@ -16,46 +16,23 @@ const displayCompanies = (companies) => {
         let address = document.createElement("p")
         let phone =  document.createElement("p");
         let url =  document.createElement("a");
-        let member =  document.createElement("h4");
-
-
 
         h3.textContent = `${company.name}`;
         address.textContent = `${company.address}`;
         phone.textContent = `${company.phone}`;
+        logo.setAttribute("class", 'cardimg');
         logo.setAttribute("src", company.image);
         logo.setAttribute("alt", `${company.name}'s Logo`);
         logo.setAttribute("loading", "lazy");
         url.setAttribute("href", company.websiteurl)
         url.textContent = `Website`
-
-        switch (company.membershiplevel){
-            case "1":
-                member.textContent = "Non-Profit \n Member"
-                break;
-            case "2":
-                member.textContent = "Bronze \n Member"
-                break;
-            case "3":
-                member.textContent = "Silver \n Member"
-                break;
-            case "4":
-                member.textContent = "Gold \n Member"
-                break;
-        }
-
-        member.innerHTML = member.innerHTML.replace('\n', '<br />');
-
-   
         address.setAttribute("id","address")
         phone.setAttribute("id","phone")
-        member.setAttribute("id","membership")
-
+        
         card.appendChild(logo);
         card.appendChild(h3)
         card.appendChild(address);
         card.append(phone);
-        card.append(member);
         card.appendChild(url);
 
         cards.appendChild(card);

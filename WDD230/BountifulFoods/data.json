@@ -1,0 +1,68 @@
+{
+    "companies": [
+        {
+            "name" : "Smiths Food & Drugs",
+            "address" : "2794 Loker Ave W # 102, Carlsbad, CA 92010",
+            "phone" : "+14254489868",
+            "websiteurl" : "https://www.smithsfoodanddrug.com/",
+            "image" : "https://www.smithsfoodanddrug.com/content/v2/binary/image/smiths_svg_logo--freshcart_smiths_color_logo--smiths.svg",
+            "email": "info@https://www.smithsfoodanddrug.com/"  
+        },
+        {
+            "name" : "Smart & Final Extra!",
+            "address" : "955 Carlsbad Village Dr, Carlsbad, CA 92008",
+            "phone" : "+14258202643",
+            "websiteurl" : "https://www.smartandfinal.com/",
+            "image" : "https://static.wikia.nocookie.net/logopedia/images/f/f2/E68264_23a386a8b47645eda853cfbd75b631c1_mv2.png",
+            "email": "info@smartandfinal.com"    
+        },
+        {
+            "name" : "Vons",
+            "address" : "6951 El Camino Real, Carlsbad, CA 92009",
+            "phone" : "+14256291990",
+            "websiteurl" : "https://www.vons.com/",
+            "image" : "https://www.vons.com/content/dam/logos/Vons_RGB.svg",
+            "email": "info@vons.com"    
+        },
+        {
+            "name" : "Gelson's La Costa/Carlsbad",
+            "address" : "2618 El Camino Real, Carlsbad, CA 92008",
+            "phone" : "+14255820473",
+            "websiteurl" : "https://www.gelsons.com/",
+            "image" : "https://testaqua.com/wp-content/uploads/2019/05/gelsons-logo.png",
+            "email": "info@www.gelsons.com"  
+        },
+        {
+            "name" : "Sprouts Farmers Market",
+            "address" : "14148 NE 190th St Woodinville, CA 92009",
+            "phone" : "+18008403346",
+            "websiteurl" : "https://www.sprouts.com/",
+            "image" : "https://www.sprouts.com/wp-content/uploads/2022/10/Sprouts_Logo_Web_trademarked.png",
+            "email": "info@sprouts.com"  
+        },
+        {
+            "name" : "El Cubano",
+            "address" : "5806 Van Allen Way, Carlsbad, CA 92008",
+            "phone" : "+17608148224",
+            "websiteurl" : "https://www.elcubanocarlsbad.com/",
+            "image" : "https://www.theislandatcarlsbad.com/wp-content/uploads/sites/4/2017/04/El-Cubano-Logo_New.png",
+            "email": "info@elcubanocarlsbad.com"  
+        },
+        {
+            "name" : "Whole Foods Market",
+            "address" : "2600 Via De La Valle Ste 100, Del Mar, CA 92014",
+            "phone" : "+17608148224",
+            "websiteurl" : "https://www.wholefoodsmarket.com/",
+            "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Whole_Foods_Market_201x_logo.svg/800px-Whole_Foods_Market_201x_logo.svg.png",
+            "email": "info@wholefoodsmarket.com"  
+        },
+        {
+            "name" : "Veggie Grill",
+            "address" : "965 PALOMAR AIRPORT RD., #100 CARLSBAD, CA 92011",
+            "phone" : "+17608148224",
+            "websiteurl" : "https://veggiegrill.com/",
+            "image" : "https://veggiegrill.com/wp-content/uploads/2020/11/Veggie_Grill_logo.svg",
+            "email": "info@veggiegrill.com"  
+        }
+    ]
+}

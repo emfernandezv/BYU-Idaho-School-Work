@@ -17,19 +17,36 @@
 
 
     /*MAIN INDEX*/
-    #cards {
+    #main-home #cards {
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: auto;
     }
-    #weather {
+    #main-home #weather {
         grid-column: 2/3;
         grid-row: 1/2;
         margin-left: 0.5em;
     }
-    #shipping {
-        display: grid;
+    #main-home #fresh {
+        margin-left: 0.5em;
+    }
+    #main-home #shipping {
         grid-column: 3/4;
         grid-row: 1/2;
         margin-left: 0.5em;
     }
+    #main-home #explore{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+
+    /*PARTNERS*/
+
+    #main-partners .liparagraph{
+        font-size: var(--font-size-parragraph);
+    }
+    #main-partners #opportunities p{
+        font-size: var(--font-size-parragraph);
+    }
+
 }
