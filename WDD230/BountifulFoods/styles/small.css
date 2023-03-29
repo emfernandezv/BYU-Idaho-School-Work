@@ -570,6 +570,7 @@ html {
 }
 #main-partners #partnersimg{
     float: none;
+    width: 100%;
 }
 #main-partners .lititle{
     font-family: var(--font-2);
