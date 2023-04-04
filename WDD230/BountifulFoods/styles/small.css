@@ -581,8 +581,7 @@ html {
 #main-fresh{
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 #main-fresh form{
     grid-column: 1/2;
@@ -597,11 +596,13 @@ html {
     display: grid;
     grid-template-columns: auto;
     border: 2px solid var(--accent5-color);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 #main-fresh form .fsclass{
     font-size: var(--font-size-parragraph);
     font-family: var(--font-1);
-    margin: 0.5em 1em 0.5em 1em;
+    margin-bottom: 0.5em;
 }
 #main-fresh form legend{
     font-size: var(--font-size-parragraph2);
@@ -637,6 +638,8 @@ html {
     display: grid;
     grid-template-columns: auto;
     border: 2px solid var(--accent5-color);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 #main-fresh form #fs2 select,#label-additional{
     display: grid;
@@ -651,29 +654,35 @@ html {
     display: grid;
     grid-template-columns: auto;
     border: 2px solid var(--accent5-color);
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 #main-fresh form #fs3 table{
     border: solid 2px var(--accent4-color);
 }
-#main-fresh .tale-header{
+#main-fresh form #fs3 table thead tr th{
     background-color: var(--accent3-color);
 }
 #main-fresh form #fs3 .feature,.ben-sub-tit,.featurelabel{
-    font-size: var(--font-size-parragraph3);
+    font-size: 0.5em;
 }
 #main-fresh form #fs3 .featurelabel{
     text-align: left;
+    font-size: 0.5em;
 }
 #main-fresh form #fs3 .ben-sub-tit,.ben-sub{
     text-align: center;
     font-weight: bold;
+    font-size: 0.5em;
 }
 #main-fresh form #fs3 .feature,.ben-sub-tot{
     text-align: right;
-    font-size: var(--font-size-parragraph3);
+    
+    font-size: 0.5em;
 }
 #main-fresh form #fs3 .ben-sub-tot{
 font-weight: bold;
+font-size: 0.5em;
 }
 #main-fresh form button{
     grid-row: 4/5;
