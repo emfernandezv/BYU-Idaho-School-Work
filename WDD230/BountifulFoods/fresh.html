@@ -14,6 +14,7 @@
     <link href="./styles/medium.css" rel="stylesheet">
     <link href="./styles/large.css" rel="stylesheet">
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/fresh.js" defer></script>
 </head>
 <body>
     <header>
@@ -39,44 +40,152 @@
             </ul>
         </nav>
     </header>
-    <main id="mainfresh">
-        <form class="form" method="get" action="thankyou.html">
-            <fieldset id="fs1">
-                <legend>Personal</legend>
+    <main id="main-fresh">
+        <form class="form">
+            <fieldset id="fs1" class="fsclass">
+                <legend>Client Info</legend>
                 <label id="label-firstname">First Name*:
-                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}"  required title="Please enter at least 2 alphabetical characters , can use - or spaces. Eg: Joe" >
+                    <input id="input-name" type="text" class="input" minlength="2" pattern="[A-Za-z\s\-]{2,}"  required title="Please enter at least 2 alphabetical characters , can use - or spaces. Eg: Joe" >
                 </label>
-                <label id="label-lastname">Last Name*:
-                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}" required title="Please enter at least 2 alphabetical characters , can use - or spaces. Eg: Smith">
-                </label>  
                 <label id="label-email">E-mail*: 
-                    <input type="text" pattern="[A-Za-z^@\s]+@[A-Za-z^@\s]+\.[^@\s]+" required placeholder="email@mail.com" title="Must contain @ and . Eg: email@mail.com">
+                    <input id="input-email" type="text" class="input" pattern="[A-Za-z^@\s]+@[A-Za-z^@\s]+\.[^@\s]+" required placeholder="email@mail.com" title="Must contain @ and . Eg: email@mail.com">
                 </label>
                 <label id="label-cellphone">Cellphone*: 
-                    <input type="tel" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="###-###-####" title="Numeric Values only. Eg: 8018018899">
+                    <input id="input-cellphone" type="tel" class="input" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required placeholder="###-###-####" title="Numeric Values only. Eg: 8018018899">
                 </label>
             </fieldset>
-            <fieldset  id="fs2">
-                <legend>Business</legend>
-                <label id="label-businessname">Business Name*: 
-                    <input type="text" minlength="2" pattern="[A-Za-z\s\-]{2,}"  required title="Please enter at least 2 alphabetical Characters, can use - or spaces. Eg: My Company">
-                </label>
-                <label id="label-position">Position Title: 
-                    <input type="text" minlength="7" pattern="[A-Za-z\s\-]{7,}" title="Please enter at least 7 alphabetical characters, hyphens or spaces" >
-                </label>
-                <label id="label-membership">Membership Level*:
-                    <select id="input-membership" required>
-                        <option value="">Please Select you level</option>
-                        <option value="4">Gold Membership</option>
-                        <option value="3">Silver Membership</option>
-                        <option value="2">Bronze Membership</option>
-                        <option value="1">NP Membership (Non profit)</option>
+            <fieldset  id="fs2" class="fsclass">
+                <legend>Fruit Selection</legend>
+                <label id="label-fruit1">Fruit 1*:
+                    <select id="input-fruit1" required>
                     </select>
                 </label>
-                <label id="label-businessdesc">Business Description*: 
-                    <textarea id="input-businessdesc" name="input-businessdesc" rows="5" cols="1" placeholder="Please add a brief description of your business" required></textarea>
-                    <input type="hidden" id="datetime" name="date" value="CurrentDateTime"> 
+                <label id="label-fruit2">Fruit 2*:
+                    <select id="input-fruit2" required>
+                    </select>
                 </label>
+                <label id="label-fruit3">Fruit 3*:
+                    <select id="input-fruit3" required>
+                    </select>
+                </label>
+                <label id="label-additional">Obs: 
+                    <textarea id="input-additional" name="input-additional" rows="5" cols="1" placeholder="Please add any special instructions if needed."></textarea>
+                    <input type="hidden" id="input-datetime" name="date" value="CurrentDateTime"> 
+                </label>
+            </fieldset>
+            <fieldset  id="fs3" class="fsclass">
+                <legend>Nutritional Values</legend>
+                <table>
+                    <caption>
+                            Serving Values
+                    </caption>
+                    <thead>
+                        <tr class="tale-header">
+                            <th class="ben-sub-tit">Fruits</th>
+                            <th class="ben-sub-tit" >Carbs</th>
+                            <th class="ben-sub-tit" >Protein</th>
+                            <th class="ben-sub-tit" >Fat</th>
+                            <th class="ben-sub-tit" >Sugar</th>
+                            <th class="ben-sub-tit" >Calories</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tale-body">
+                            <td class="featurelabel" id="fruit1-name">Fruit 1</td>
+                            <td class="feature" id="fruit1-carbs">0</td>
+                            <td class="feature" id="fruit1-protein">0</td>
+                            <td class="feature" id="fruit1-fat">0</td>
+                            <td class="feature" id="fruit1-sugar">0</td>
+                            <td class="feature" id="fruit1-cal">0</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="featurelabel" id="fruit2-name">Fruit 2</td>
+                            <td class="feature" id="fruit2-carbs">0</td>
+                            <td class="feature" id="fruit2-protein">0</td>
+                            <td class="feature" id="fruit2-fat">0</td>
+                            <td class="feature" id="fruit2-sugar">0</td>
+                            <td class="feature" id="fruit2-cal">0</td>
+                        </tr>
+                        <tr class="tale-body" >
+                            <td class="featurelabel" id="fruit3-name">Fruit 3</td>
+                            <td class="feature" id="fruit3-carbs">0</td>
+                            <td class="feature" id="fruit3-protein">0</td>
+                            <td class="feature" id="fruit3-fat">0</td>
+                            <td class="feature" id="fruit3-sugar">0</td>
+                            <td class="feature" id="fruit3-cal">0</td>
+                        </tr>
+
+                    </tbody>
+                    <tfoot>
+                        <tr class="tale-header">
+                            <td class="ben-sub">Total(g)</td>
+                            <td class="ben-sub-tot" id="total-carbs">0</td>
+                            <td class="ben-sub-tot" id="total-protein">0</td>
+                            <td class="ben-sub-tot" id="total-fat">0</td>
+                            <td class="ben-sub-tot" id="total-sugar">0</td>
+                            <td class="ben-sub-tot" id="total-cal">0</td>
+                        </tr>
+                    </tfoot>
+                </table>    
+            </fieldset>
+            <button type="button" id="button">Submit Order</button>
+            <fieldset  id="fs4" class="hidden">
+                <table>
+                    <thead>
+                        <th colspan="2" class="ben-sub-tit">Order Summary</th>
+                    </thead>
+                    <tbody>
+                        <tr class="tale-body">
+                            <td class="field">Date</td>
+                            <td class="value" id="order-date">Date</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="field">Name</td>
+                            <td class="value" id="order-name">Client Name</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="field">Email</td>
+                            <td class="value" id="order-email">Client Email</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="field">Phone</td>
+                            <td class="value" id="order-cellphone">Client Phone</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td rowspan="3" class="field">Fruits</td>
+                            <td class="value" id="order-f1">Client Phone</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="value" id="order-f2">Client Phone</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="value" id="order-f3">Client Phone</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="value" id="order-obs">Obs</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="field">Total Carbs</td>
+                            <td class="value" id="order-carbs">0</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="field">Total Protein</td>
+                            <td class="value" id="order-protein">0</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="field">Total Fat</td>
+                            <td class="value" id="order-fat">0</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="field">Total Sugar</td>
+                            <td class="value" id="order-sugar">0</td>
+                        </tr>
+                        <tr class="tale-body">
+                            <td class="field">Total Calories</td>
+                            <td class="value" id="order-cal">0</td>
+                        </tr>
+                    </tbody>
+                </table>
             </fieldset>
         </form>
     </main>

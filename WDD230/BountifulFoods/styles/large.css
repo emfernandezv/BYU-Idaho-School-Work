@@ -49,4 +49,56 @@
         font-size: var(--font-size-parragraph);
     }
 
+    /*FRESH*/
+    #main-fresh form .fsclass{
+        font-size: 0.95vw;
+    }
+    #main-fresh form{
+        grid-template-columns: 50% 50%;
+    }
+    #main-fresh form #fs2{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #main-fresh form #fs3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    #main-fresh form button{
+        grid-column: 2/3;
+        grid-row: 2/3;
+       height: auto;
+       margin-top: 1em;
+       margin-bottom: 1em;
+    }
+    #main-fresh form #fs3 .feature,.featurelabel,.ben-sub-tot{
+        font-size: var(--font-size-parragraph);
+    }
+    #main-fresh #fs1 #label-firstname,#label-email,#label-cellphone{
+        padding-bottom: 0.3em;
+    }
+    #main-fresh #fs1 .input,select,textarea,label,legend{
+        padding-top: 0.3em;;
+        padding-bottom: 0.3em;
+        font-size: var(--font-size-parragraph);
+    }
+    #main-fresh #fs1 legend{
+        font-size: var(--font-size-parragraph);
+    }
+    #main-fresh #fs2 legend{
+        font-size: var(--font-size-parragraph);
+    }
+    #main-fresh #fs3 legend{
+        font-size: var(--font-size-parragraph);
+    }
+    #main-fresh #fs3 .ben-sub-tit{
+        font-size: var(--font-size-parragraph);
+    }
+    #main-fresh #fs3 caption{
+        font-size: var(--font-size-h1);
+    }
+    #main-fresh form #fs4{
+        margin-left: 15em;     
+        margin-right: 15em;     
+    }
 }
