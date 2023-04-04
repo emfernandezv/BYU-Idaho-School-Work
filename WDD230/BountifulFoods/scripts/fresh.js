@@ -20,12 +20,7 @@ getFruitData();
 
 function populateLists(list,number){
     let listField = document.getElementById(`input-fruit${number}`);
-    // first value
-    let option = document.createElement("option");
-    option.setAttribute("value"," ");
-    option.setAttribute("label","Select a fruit");
-    listField.appendChild(option)
-
+      
     for (let i = 0; i < list.length; i++) {
         let option = document.createElement("option");
         option.setAttribute("value",list[i].id);
