@@ -1,5 +1,4 @@
 @media only screen and (min-width: 64em){
-
     /*HEADER*/
     .nav-menu{
         display: grid;
@@ -14,8 +13,6 @@
         display: inline;
         padding: 0;
     }
-
-
     /*MAIN INDEX*/
     #main-home #cards {
         grid-template-columns: 33% 33% 33%;
@@ -38,17 +35,13 @@
         margin-left: 1em;
         margin-right: 1em;
     }
-
-
     /*PARTNERS*/
-
     #main-partners .liparagraph{
         font-size: var(--font-size-parragraph);
     }
     #main-partners #opportunities p{
         font-size: var(--font-size-parragraph);
     }
-
     /*FRESH*/
     #main-fresh form .fsclass{
         font-size: 0.95vw;

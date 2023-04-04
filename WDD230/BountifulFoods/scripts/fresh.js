@@ -90,7 +90,6 @@ function summary(){
     document.getElementById("order-f2").textContent = f2;
     document.getElementById("order-f3").textContent = f3;
 
-
     /*TOTAL*/
     let totalCarbs = 0;
     let totalProtein = 0;
