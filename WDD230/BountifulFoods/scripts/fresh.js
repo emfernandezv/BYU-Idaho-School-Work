@@ -20,7 +20,6 @@ getFruitData();
 
 function populateLists(list,number){
     let listField = document.getElementById(`input-fruit${number}`);
-      
     for (let i = 0; i < list.length; i++) {
         let option = document.createElement("option");
         option.setAttribute("value",list[i].id);
@@ -29,40 +28,22 @@ function populateLists(list,number){
     }
 }
 
-document.querySelector("#input-fruit1").addEventListener("change", function() {
-    fruitValue(1)
-});
-document.querySelector("#input-fruit2").addEventListener("change", function() {
-    fruitValue(2)
-});
-document.querySelector("#input-fruit3").addEventListener("change", function() {
-    fruitValue(3)
-});
+document.querySelector("#input-fruit1").addEventListener("change", function() {fruitValue(1)});
+document.querySelector("#input-fruit2").addEventListener("change", function() {fruitValue(2)});
+document.querySelector("#input-fruit3").addEventListener("change", function() {fruitValue(3)});
+
 function fruitValue(number){
     let selectedValue = document.getElementById(`input-fruit${number}`).value;
-    let nameField = document.getElementById(`fruit${number}-name`);
-    let carbsField = document.getElementById(`fruit${number}-carbs`);
-    let proteinField = document.getElementById(`fruit${number}-protein`);
-    let fatField = document.getElementById(`fruit${number}-fat`);
-    let sugarField = document.getElementById(`fruit${number}-sugar`);
-    let calField = document.getElementById(`fruit${number}-cal`);
-
     for (let i = 0; i < data.length; i++) {
        if (data[i].id == selectedValue) {
-            nameField.textContent = data[i].name;
-            carbsField.textContent = parseFloat(data[i].nutritions.carbohydrates).toFixed(2);
-            proteinField.textContent = parseFloat(data[i].nutritions.protein).toFixed(2);
-            fatField.textContent = parseFloat(data[i].nutritions.fat).toFixed(2);
-            sugarField.textContent = parseFloat(data[i].nutritions.sugar).toFixed(2);
-            calField.textContent = parseFloat(data[i].nutritions.calories).toFixed(2);
+            document.getElementById(`fruit${number}-name`).textContent = data[i].name;
+            document.getElementById(`fruit${number}-carbs`).textContent = parseFloat(data[i].nutritions.carbohydrates).toFixed(2);
+            document.getElementById(`fruit${number}-protein`).textContent = parseFloat(data[i].nutritions.protein).toFixed(2);
+            document.getElementById(`fruit${number}-fat`).textContent = parseFloat(data[i].nutritions.fat).toFixed(2);
+            document.getElementById(`fruit${number}-sugar`).textContent = parseFloat(data[i].nutritions.sugar).toFixed(2);
+            document.getElementById(`fruit${number}-cal`).textContent = parseFloat(data[i].nutritions.calories).toFixed(2);
         }
     }
-
-    let totalCarbField = document.getElementById("total-carbs");
-    let totalProteinField = document.getElementById("total-protein");
-    let totalFatField = document.getElementById("total-fat");
-    let totalSugarField = document.getElementById("total-sugar");
-    let totalCalField = document.getElementById("total-cal");
     let totalCarbs = 0;
     let totalProtein = 0;
     let totalFat = 0;
@@ -75,11 +56,11 @@ function fruitValue(number){
         totalSugar = totalSugar + parseFloat(document.getElementById(`fruit${a}-sugar`).textContent);
         totalCal = totalCal + parseFloat(document.getElementById(`fruit${a}-cal`).textContent);
     }
-    totalCarbField.textContent = totalCarbs.toFixed(2);
-    totalProteinField.textContent = totalProtein.toFixed(2);
-    totalFatField.textContent = totalFat.toFixed(2);
-    totalSugarField.textContent = totalSugar.toFixed(2);
-    totalCalField.textContent = totalCal.toFixed(2);
+    document.getElementById("total-carbs").textContent = totalCarbs.toFixed(2);
+    document.getElementById("total-protein").textContent = totalProtein.toFixed(2);
+    document.getElementById("total-fat").textContent = totalFat.toFixed(2);
+    document.getElementById("total-sugar").textContent = totalSugar.toFixed(2);
+    document.getElementById("total-cal").textContent = totalCal.toFixed(2);
 }
 
 const f4class = document.getElementById('fs4');
