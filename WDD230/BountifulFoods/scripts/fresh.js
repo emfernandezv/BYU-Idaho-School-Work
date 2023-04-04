@@ -109,7 +109,7 @@ function summary(){
     document.getElementById("order-name").textContent = document.getElementById("input-name").value;
     document.getElementById("order-email").textContent = document.getElementById("input-email").value;
     document.getElementById("order-cellphone").textContent = document.getElementById("input-cellphone").value;
-    document.getElementById("order-obs").textContent = document.getElementById("input-additional").innerText;
+    document.getElementById("order-obs").textContent = String(document.getElementById("input-additional").value);
     document.getElementById("order-f1").textContent = f1;
     document.getElementById("order-f2").textContent = f2;
     document.getElementById("order-f3").textContent = f3;
