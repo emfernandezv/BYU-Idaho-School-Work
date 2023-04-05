@@ -22,6 +22,7 @@
         grid-column: 2/3;
         grid-row: 1/2;
         margin-left: 0.5em;
+        
     }
     #main-home #fresh {
         margin-left: 0.5em;
@@ -35,12 +36,56 @@
         margin-left: 1em;
         margin-right: 1em;
     }
+    #main-home .slideshow-container {
+        width: 75%;
+    }
+    #main-home #currentWeather img{
+        width: 10vw;
+    }
+    #main-home #weathertemp {
+        font-size: 3vw;
+    }
+    #main-home #weatherdesc {
+        font-size: 2vw;
+    }
+    #main-home #weatherhum {
+        font-size: 1.5vw;
+    }
+    #main-home #weather #forecast .foreclass{
+        padding: 0.3em;
+        grid-template-columns: 40% 60%;
+    }
+    #main-home #weather #forecast .fcDate{
+        font-size: 2vw;
+    }
+    #main-home #weather #forecast .fcTemp{
+        font-size: 1.5vw;
+    }
+    #main-home #weather #forecast .fcDesc{
+        font-size: 1vw;
+    }
+    #main-home #weather #forecast .fcImg{
+        width: 5vw;
+    }
     /*PARTNERS*/
+    #main-partners .cards {
+        grid-template-columns: repeat(auto-fit,25%);
+        margin-left: 1em;
+        margin-right: 1em;
+    }
     #main-partners .liparagraph{
         font-size: var(--font-size-parragraph);
     }
+    #main-partners #opportunities{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
     #main-partners #opportunities p{
         font-size: var(--font-size-parragraph);
+    }
+    #main-partners section h3{
+        font-size: var(--font-size-h3);
+        
     }
     /*FRESH*/
     #main-fresh form .fsclass{
@@ -98,5 +143,13 @@
     #main-fresh #fs4{
         margin-left: 15em;     
         margin-right: 15em;     
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    #main-fresh form #fs5{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 5em;
+        margin-right: 5em;
     }
 }

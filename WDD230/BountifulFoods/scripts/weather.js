@@ -20,8 +20,76 @@ async function apiFetch() {
         console.log(error);
     }
 }
+
+const url2 =   "https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&appid=df316398a3c9e783d731138fffc20584&units=imperial"
+
+async function apiForecastFetch() {
+    try {
+        const response = await fetch(url2);
+        if (response.ok) {
+        const forecast = await response.json();
+        displayForecast(forecast);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
     
 apiFetch();
+apiForecastFetch();
+
+function displayForecast(forecast){
+
+    //getting mid day forecast day 1 [10]
+    let d1Date = weekDay(new Date(forecast.list[10].dt_txt).getDay());
+    let d1Temp = forecast.list[10].main.temp;
+    let d1Desc = forecast.list[10].weather[0].description.toUpperCase();
+    let d1Img = `https://openweathermap.org/img/w/${forecast.list[2].weather[0].icon}.png`;
+
+    document.getElementById('fc1Img').setAttribute('src', d1Img);
+    document.getElementById('fc1Img').setAttribute('alt', d1Desc.toUpperCase());
+    document.getElementById('fc1Desc').innerText = d1Desc;
+    document.getElementById('fc1Grade').innerText = d1Temp;
+    document.getElementById('fc1Date').innerText = d1Date;
+
+    //getting mid day forecast day 2 [18]
+    let d2Date = weekDay(new Date(forecast.list[18].dt_txt).getDay());
+    let d2Temp = forecast.list[18].main.temp;
+    let d2Desc = forecast.list[18].weather[0].description.toUpperCase();
+    let d2Img = `https://openweathermap.org/img/w/${forecast.list[10].weather[0].icon}.png`;
+
+    document.getElementById('fc2Img').setAttribute('src', d2Img);
+    document.getElementById('fc2Img').setAttribute('alt', d2Desc.toUpperCase());
+    document.getElementById('fc2Desc').innerText = d2Desc;
+    document.getElementById('fc2Grade').innerText = d2Temp;
+    document.getElementById('fc2Date').innerText = d2Date;
+
+    //getting mid day forecast day 3 [26]
+    let d3Date = weekDay(new Date(forecast.list[26].dt_txt).getDay());
+    let d3Temp = forecast.list[26].main.temp;
+    let d3Desc = forecast.list[26].weather[0].description.toUpperCase();
+    let d3Img = `https://openweathermap.org/img/w/${forecast.list[18].weather[0].icon}.png`;
+
+    document.getElementById('fc3Img').setAttribute('src', d3Img);
+    document.getElementById('fc3Img').setAttribute('alt', d3Desc.toUpperCase());
+    document.getElementById('fc3Desc').innerText = d3Desc;
+    document.getElementById('fc3Grade').innerText = d3Temp;
+    document.getElementById('fc3Date').innerText = d3Date;
+}
+
+function weekDay(number){
+    switch (number){
+        case 0: return "SUN";
+        case 1: return "MON";
+        case 2: return "TUE";
+        case 3: return "WED";
+        case 4: return "THU";
+        case 5: return "FRI";
+        case 6: return "SAT";
+    }
+}
 
 function  displayResults(weatherData) {
     //Getting the current temp

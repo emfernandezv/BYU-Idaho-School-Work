@@ -64,16 +64,76 @@ function fruitValue(number){
 }
 
 const f4class = document.getElementById('fs4');
+const f5class = document.getElementById('fs5');
 const button = document.getElementById('button');
 
 button.addEventListener('click', () => {
-    if (f4class.classList == 'active'){
-        f4class.classList.replace('active','hidden');
+    if (validate() == 0){
+        f5class.classList.replace('active','hidden');
+        if (f4class.classList == 'active'){
+            f4class.classList.replace('active','hidden');
+        }else{
+            f4class.classList.replace('hidden','active');
+            summary();
+        }
     }else{
-        f4class.classList.replace('hidden','active');
-        summary();
+        if (f5class.classList == 'active'){
+            summary();
+        }else{
+            f5class.classList.replace('hidden','active');
+            summary();
+        }
     }
 }, false);
+
+function validate(){
+    let errorCount = 0;
+    let list = document.getElementById('errorlist')
+    list.innerHTML = ''
+    var name = document.getElementById("input-name").value;
+    if(name == ''){
+        let optionName = document.createElement("li");
+        optionName.innerText = 'You need add your name.';
+        list.appendChild(optionName);
+        errorCount = errorCount + 1;
+    }
+    var email = document.getElementById("input-email").value;
+    if(email == ''){
+        let optionEmail = document.createElement("li");
+        optionEmail.innerText = 'You need add your email.';
+        list.appendChild(optionEmail);
+        errorCount = errorCount + 1;
+    }
+    var cellphone = document.getElementById("input-cellphone").value;
+    if(cellphone == ''){
+        let optionPhone = document.createElement("li");
+        optionPhone.innerText = 'You need add your phone number.';
+        list.appendChild(optionPhone);
+        errorCount = errorCount + 1;
+    }
+    var f1 = document.getElementById('input-fruit1')[document.getElementById('input-fruit1').selectedIndex].label
+    if(f1 == 'Please select your fruit'){
+        let optionf1 = document.createElement("li");
+        optionf1.innerText = 'You need to choose a fruit 1.';
+        list.appendChild(optionf1);
+        errorCount = errorCount + 1;
+    }
+    var f2 = document.getElementById('input-fruit2')[document.getElementById('input-fruit2').selectedIndex].label;
+    if(f2 == 'Please select your fruit'){
+        let optionf2 = document.createElement("li");
+        optionf2.innerText = 'You need to choose a fruit 2.';
+        list.appendChild(optionf2);
+        errorCount = errorCount + 1;
+    }
+    var f3 = document.getElementById('input-fruit3')[document.getElementById('input-fruit3').selectedIndex].label;
+    if(f3 == 'Please select your fruit'){
+        let optionf3 = document.createElement("li");
+        optionf3.innerText = 'You need to choose a fruit 3.';
+        list.appendChild(optionf3);
+        errorCount = errorCount + 1;
+    }
+    return errorCount;
+}
 
 function summary(){
     /*CLIENT DATA*/
@@ -108,5 +168,15 @@ function summary(){
     document.getElementById("order-fat").textContent = totalFat.toFixed(2);
     document.getElementById("order-sugar").textContent = totalSugar.toFixed(2);
     document.getElementById("order-cal").textContent = totalCal.toFixed(2);
+
+    // Store the current visit date in local storage
+    var qDrinks = parseInt(localStorage.getItem('qDrinks'));
+    if (isNaN(qDrinks)){
+        localStorage.setItem('qDrinks', 1) ;
+    }else{
+        qDrinks = qDrinks + 1
+        localStorage.setItem('qDrinks', qDrinks) ;
+    }
+
 }
 

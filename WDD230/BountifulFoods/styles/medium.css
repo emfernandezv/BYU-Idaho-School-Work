@@ -7,6 +7,9 @@
         width: 4em;
     }
     /*MAIN - INDEX*/
+    #main-home .slideshow-container {
+        width: 90%;
+    }
     #main-home #cards {
         grid-template-columns: repeat(2,50%) ;
         grid-template-rows: auto;
@@ -21,6 +24,35 @@
         grid-row: 1/2;;
         margin-left: 0.5em;
     }
+    #main-home #weather #forecast .foreclass{
+        padding-top: 0.5em;
+        padding-bottom: 0;
+    }
+    #main-home #currentWeather img{
+        width: 20vw;
+    }
+    #main-home #weathertemp {
+        font-size: 10vw;
+    }
+    #main-home #weatherdesc {
+        font-size: 5vw;
+    }
+    #main-home #weatherhum {
+        font-size: 5vw;
+    }
+    #main-home #weather #forecast .fcImg{
+        width: 15vw;
+    }
+    #main-home #weather #forecast .fcDate{
+        font-size: 4vw;
+    }
+    #main-home #weather #forecast .fcTemp{
+        font-size: 3vw;
+    }
+    #main-home #weather #forecast .fcDesc{
+        font-size: 2.5vw;
+    }
+
     /*MAIN - ABOUT US*/
     #main-aboutus #Contact{
         text-align: left;
@@ -58,11 +90,14 @@
         grid-column: 1/3;
     }
     #main-partners .cards img{
-        width: 90%;
+        width: 50%;
     }
     #main-partners #menu-directory button{
         padding: 1vw;
         font-size: 1.5em;
+    }
+    #main-partners .cards {
+        grid-template-columns: 33% 33% 33%;
     }
     /*MAIN - FRESH*/
     #main-fresh form{
@@ -113,5 +148,10 @@
     }
    #main-fresh form #fs1 input{
         font-size: var(--font-size-parragraph3);
+    }
+    #main-fresh form #fs5{
+        grid-column: 1/3;
+        margin-left: 3em;
+        margin-right: 3em;
     }
 }

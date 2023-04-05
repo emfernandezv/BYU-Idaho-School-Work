@@ -152,7 +152,8 @@ html {
 }
 /* Slideshow container */
 #main-home .slideshow-container {
-  max-width: 1000px;
+  width: 100%;
+  object-fit: scale-down;
   position: relative;
   margin: auto;
   grid-column: 1/2;
@@ -258,14 +259,14 @@ html {
     grid-column: 1/2;
     grid-row: 2/3;
     display: grid;
-    margin-bottom: 0.5em;
+    height: fit-content;
+    margin: auto
 }
 #main-home #currentWeather img{
     width: 6em;
     height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 #main-home #currentWeather h3{
     text-align: center;
@@ -273,22 +274,82 @@ html {
 }
 #main-home #weathertemp {
     font-size: 3em;
+    margin: auto;
 }
 #main-home #weatherdesc {
     font-size: 1.8em;
     text-shadow: var(--accent5-color) 1px 0 10px;
+    margin: auto;
 }
 #main-home #weatherhum {
     font-size: 1em;
+    margin: auto;
 }
 #main-home #weather #forecast{
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
+    margin-left: 1em;
+    margin-bottom: 1em;
 }
-
-
-
+#main-home #weather #forecast .foreclass{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    padding: 0.5em;
+}
+#main-home #weather #forecast #forecast1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+}
+#main-home #weather #forecast #forecast2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+}
+#main-home #weather #forecast #forecast3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border-bottom: solid 1px black;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+}
+#main-home #weather #forecast .fcDate{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: var(--font-size-h4);
+    margin: auto;
+    height: fit-content;
+}
+#main-home #weather #forecast .fcImg{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 20vw;
+}
+#main-home #weather #forecast .fcTemp{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: var(--font-size-h4);
+    margin: auto;
+    height: fit-content;
+}
+#main-home #weather #forecast .fcDesc{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: var(--font-size-h4);
+    margin: auto;
+    height: fit-content;
+    text-align: center;
+}
 #main-home #shipping {
     grid-column: 1/2;
     grid-row: 3/4;
@@ -343,8 +404,8 @@ html {
     padding-left: 1em;
     padding-right: 1em;
     background-color: var(--accent2-color);
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 #main-home #explore h2{
     font-style: italic;
@@ -382,7 +443,7 @@ html {
     display: grid;
     border: solid 2px var(--accent4-color);
     border-radius: 5px;
-    margin: 0.5em;
+    margin: 1em;
     padding: 1em;
     background-color: var(--accent2-color);
 }
@@ -439,7 +500,7 @@ html {
 /*PARTNERS*/
 #main-partners{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     margin-top: 1em;
 }
 #main-partners #cardsbox{
@@ -459,10 +520,11 @@ html {
     grid-row: 2/3;
     padding-left: 1em;
     padding-right: 1em;
+
 }
 #main-partners .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: 50% 50%;
     padding: 0;
 
 }
@@ -474,7 +536,7 @@ html {
     margin: 0.5em;
 }
 #main-partners section p,a{
-    font-size: 1em;
+    font-size: var(--font-size-parragraph3);
     font-family: var(--font-2);
 }
 #main-partners section:hover{
@@ -482,13 +544,14 @@ html {
    
 }
 #main-partners section h3{
-    font-size: var(--font-size-h3);
+    font-size: var(--font-size-h4);
     font-family: var(--font-1);
 }
 #main-partners .cardimg{
     height: auto;
-    width: 10em;
-    margin-top: 1em
+    width: 7em;
+    margin-top: 1em;
+    object-fit: contain;
 }
 #main-partners .list{
     display: flex;
@@ -553,6 +616,7 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
 }
 #main-partners #opportunities h2{
     font-style: italic;
@@ -710,6 +774,13 @@ html {
 }
 #main-fresh form #fs4 table .field{
     font-weight: bolder;    
+}
+#main-fresh form #fs5{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    padding: auto;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 #main-fresh .hidden{
     display: none;
