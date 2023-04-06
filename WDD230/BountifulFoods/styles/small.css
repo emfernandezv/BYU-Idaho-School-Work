@@ -547,8 +547,8 @@ html {
     border-color: var(--accent5-color);
    
 }
-#main-partners section h3{
-    font-size: var(--font-size-h4);
+#main-partners section h2{
+    font-size: var(--font-size-h3);
     font-family: var(--font-1);
 }
 #main-partners .cardimg{

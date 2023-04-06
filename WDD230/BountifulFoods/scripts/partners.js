@@ -11,7 +11,7 @@ const displayCompanies = (companies) => {
     const cards = document.querySelector("div.cards");
     companies.forEach((company) => {
         let card = document.createElement("section");
-        let h3 = document.createElement("h3");
+        let h3 = document.createElement("h2");
         let logo = document.createElement("img");
         let address = document.createElement("p")
         let phone =  document.createElement("p");
