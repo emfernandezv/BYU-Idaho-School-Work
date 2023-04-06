@@ -43,7 +43,6 @@ html {
         text-shadow: var(--accent3-color) 2px 0 20px;
         text-align: center;
     }
-
     nav img{
         height: auto;
         width: 10em;
@@ -57,7 +56,7 @@ html {
         margin-left: auto;
         margin-right: auto;
     }
-    .nav-menu{
+    .navbar ul{
         list-style: none;
         margin: 0;
         padding: 0;
@@ -69,10 +68,10 @@ html {
     nav li:first-child {
         display: block;
     }
-    .nav-menu li {
+    .nav-item {
         display: none;
     }
-    .nav-menu li:hover{
+    .nav-item :hover{
         font-weight: bolder;
         background-color:  var(--accent5-color);
     }
@@ -80,7 +79,7 @@ html {
         font-size: var(--font-size-nav);
         content: none;
     }
-    .nav-menu a {
+    .nav-item a {
         display: block;
         padding: 0.75rem;
         text-decoration: none;
@@ -92,7 +91,11 @@ html {
         text-align: center;
         font-size: 1.5em;
     }
-    .nav-menu a:hover, .nav-menu a:active {
+    .nav-item a:hover {
+        color: var(--font-color-1);
+        background-color: var(--accent4-color);
+    }
+    .nav-item a:active {
         color: var(--font-color-1);
         background-color: var(--accent4-color);
     }
@@ -393,6 +396,7 @@ html {
 }
 #main-home .link{
     float: right;
+    font-size: var(--font-size-h3);
 }
 #main-home #explore{
     grid-column: 1/2;

@@ -1,15 +1,21 @@
 @media only screen and (min-width: 64em){
     /*HEADER*/
-    .nav-menu{
-        display: grid;
+    .nav-menu-index{
+        display:grid;
+        flex-direction:row;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        margin-top: 1vw;
+    }
+    .nav-menu-aboutus,.nav-menu-partners,.nav-menu-fresh{
+        display:grid;
+        flex-direction:row;
         grid-template-columns: 25% 25% 25% 25%;
         margin-top: 1vw;
-        width: auto;
     }
-    .nav-menu li:first-child {
+    .navbar ul li:first-child {
         display: none;
     }
-    .nav-menu li {
+    .navbar ul li {
         display: inline;
         padding: 0;
     }
@@ -38,6 +44,9 @@
     }
     #main-home .slideshow-container {
         width: 75%;
+    }
+    #main-home .link{
+        font-size: var(--font-size-h2);
     }
     #main-home #currentWeather img{
         width: 10vw;
