@@ -77,11 +77,8 @@ button.addEventListener('click', () => {
             summary();
         }
     }else{
-        if (f5class.classList == 'active'){
-            summary();
-        }else{
+        if (f5class.classList != 'active'){
             f5class.classList.replace('hidden','active');
-            summary();
         }
     }
 }, false);
