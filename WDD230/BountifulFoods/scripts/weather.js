@@ -65,7 +65,7 @@ function displayForecast(forecast){
         let img = `https://openweathermap.org/img/w/${forecast.list[node].weather[0].icon}.png`;
         //Setting values
         document.getElementById(`fc${i+1}Img`).setAttribute('src', img);
-        document.getElementById(`fc${i+1}Img`).setAttribute('alt', desc.toUpperCase());
+        document.getElementById(`fc${i+1}Img`).setAttribute('alt', `${desc} ${date}`);
         document.getElementById(`fc${i+1}Desc`).innerText = desc;
         document.getElementById(`fc${i+1}Grade`).innerText = temp;
         document.getElementById(`fc${i+1}Date`).innerText = date;
