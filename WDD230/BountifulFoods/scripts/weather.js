@@ -1,6 +1,10 @@
+//variables
+var slidePosition = 0;
 const url =   "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&appid=df316398a3c9e783d731138fffc20584&units=imperial"
+const url2 =   "https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&appid=df316398a3c9e783d731138fffc20584&units=imperial"
 
-async function apiFetch() {
+//FETCH WEATHER 
+async function apiWeatherFetch() {
     try {
         const response = await fetch(url);
         if (response.ok) {
@@ -13,9 +17,7 @@ async function apiFetch() {
         console.log(error);
     }
 }
-
-const url2 =   "https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&appid=df316398a3c9e783d731138fffc20584&units=imperial"
-
+//FETCH FORECAST 
 async function apiForecastFetch() {
     try {
         const response = await fetch(url2);
@@ -29,10 +31,7 @@ async function apiForecastFetch() {
         console.log(error);
     }
 }
-    
-apiFetch();
-apiForecastFetch();
-
+//DISPLAY FORECAST
 function displayForecast(forecast){
     let today = new Date();
     today.setMinutes(0);
@@ -41,11 +40,13 @@ function displayForecast(forecast){
     today.setDate(today.getDate() + 1);
     // to retrieve the forecast for the next day on the next time range
     do{
-        currentTime = currentTime + 1
+        if( currentTime%3 > 0){
+            currentTime = currentTime - 1
+        }
     }
     while (currentTime%3!=0);
     today.setHours(currentTime);
-
+    
     //To get the index for the 5 days at the time specified above
     let index=[];
     for (let x = 0; x < forecast.list.length; x++ ){
@@ -55,11 +56,12 @@ function displayForecast(forecast){
             today.setDate(today.getDate() + 1);
         }
     }
+
     // to loop the 3 day forecast
     for (let i = 0; i < 3; i++ ){
         //to get the next 3 days index
         let node = index[i];
-        let date = weekDay(new Date(forecast.list[node].dt_txt).getDay());
+        let date = weekDay(new Date(forecast.list[index[i]].dt_txt).getDay());
         let temp = parseFloat(forecast.list[node].main.temp).toFixed(2);
         let desc = forecast.list[node].weather[0].description.toUpperCase();
         let img = `https://openweathermap.org/img/w/${forecast.list[node].weather[0].icon}.png`;
@@ -83,7 +85,7 @@ function weekDay(number){
         case 6: return "SAT";
     }
 }
-
+// DISPLAY RESULTS
 function  displayResults(weatherData) {
     //Getting the current temp
     const temp = weatherData.main.temp.toFixed(0);
@@ -105,31 +107,25 @@ function  displayResults(weatherData) {
     document.getElementById("humidityvalue").innerText = humidity;
 
 }
-
 // DRINK COUNTER
-const drinksCreated = document.querySelector("#drinknumber");
-// Get the number from local storage
-const lastValue = localStorage.getItem('qDrinks');
-if (lastValue > 0) {
-    drinksCreated.innerText = lastValue;
-}else{
-    drinksCreated.innerText = "NO";
+function drinkCounter() {
+    const drinksCreated = document.querySelector("#drinknumber");
+    // Get the number from local storage
+    const lastValue = localStorage.getItem('qDrinks');
+    if (lastValue > 0) {
+        drinksCreated.innerText = lastValue;
+    }else{
+        drinksCreated.innerText = "NO";
+    }
 }
-
-//Slider
-var slidePosition = 0;
-SlideShow();
-
 // forward/Back controls
 function plusSlides(n) {
   SlideShow(slidePosition += n);
 }
-
 //  images controls
 function currentSlide(n) {
   SlideShow(slidePosition = n);
 }
-
 function SlideShow() {
     var i;
     var slides = document.getElementsByClassName("Containers");
@@ -140,4 +136,9 @@ function SlideShow() {
     if (slidePosition > slides.length) {slidePosition = 1}
     slides[slidePosition-1].style.display = "block";
     setTimeout(SlideShow, 3000); // Change image every 3 seconds
-  } 
+} 
+//EXECUTE FUNCTIONS
+apiWeatherFetch();
+apiForecastFetch();
+drinkCounter();
+SlideShow();

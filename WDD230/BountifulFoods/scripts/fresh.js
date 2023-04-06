@@ -1,5 +1,5 @@
 let data = [];
-
+// FETCHING FRUIT DATA
 async function getFruitData() {
     try {
         const response = await fetch("https://brotherblazzard.github.io/canvas-content/fruit.json");
@@ -15,9 +15,7 @@ async function getFruitData() {
         console.log(error);
     }
 }
-  
-getFruitData();
-
+//POPULATING DROPDOWN LISTS
 function populateLists(list,number){
     let listField = document.getElementById(`input-fruit${number}`);
     for (let i = 0; i < list.length; i++) {
@@ -27,11 +25,6 @@ function populateLists(list,number){
         listField.appendChild(option)
     }
 }
-
-document.querySelector("#input-fruit1").addEventListener("change", function() {fruitValue(1)});
-document.querySelector("#input-fruit2").addEventListener("change", function() {fruitValue(2)});
-document.querySelector("#input-fruit3").addEventListener("change", function() {fruitValue(3)});
-
 function fruitValue(number){
     let selectedValue = document.getElementById(`input-fruit${number}`).value;
     for (let i = 0; i < data.length; i++) {
@@ -62,27 +55,7 @@ function fruitValue(number){
     document.getElementById("total-sugar").textContent = totalSugar.toFixed(2);
     document.getElementById("total-cal").textContent = totalCal.toFixed(2);
 }
-
-const f4class = document.getElementById('fs4');
-const f5class = document.getElementById('fs5');
-const button = document.getElementById('button');
-
-button.addEventListener('click', () => {
-    if (validate() == 0){
-        f5class.classList.replace('active','hidden');
-        if (f4class.classList == 'active'){
-            f4class.classList.replace('active','hidden');
-        }else{
-            f4class.classList.replace('hidden','active');
-            summary();
-        }
-    }else{
-        if (f5class.classList != 'active'){
-            f5class.classList.replace('hidden','active');
-        }
-    }
-}, false);
-
+// VALIDATE ORDER
 function validate(){
     let errorCount = 0;
     let list = document.getElementById('errorlist')
@@ -131,22 +104,15 @@ function validate(){
     }
     return errorCount;
 }
-
+// ORDER SUMMARY
 function summary(){
     /*CLIENT DATA*/
-    var f1 = document.getElementById('input-fruit1')[document.getElementById('input-fruit1').selectedIndex].label;
-    var f2 = document.getElementById('input-fruit2')[document.getElementById('input-fruit2').selectedIndex].label;
-    var f3 = document.getElementById('input-fruit3')[document.getElementById('input-fruit3').selectedIndex].label;
     let orderDate = new Date().toLocaleDateString('en-EN', { weekday:"long", year:"numeric", month:"long", day:"numeric"}) ;;
     document.getElementById("order-date").textContent = orderDate;
     document.getElementById("order-name").textContent = document.getElementById("input-name").value;
     document.getElementById("order-email").textContent = document.getElementById("input-email").value;
     document.getElementById("order-cellphone").textContent = document.getElementById("input-cellphone").value;
     document.getElementById("order-obs").textContent = String(document.getElementById("input-additional").value);
-    document.getElementById("order-f1").textContent = f1;
-    document.getElementById("order-f2").textContent = f2;
-    document.getElementById("order-f3").textContent = f3;
-
     /*TOTAL*/
     let totalCarbs = 0;
     let totalProtein = 0;
@@ -154,6 +120,9 @@ function summary(){
     let totalSugar = 0;
     let totalCal = 0;
     for (let a=1; a<4; a++){
+        var fruit = document.getElementById(`input-fruit${a}`)[document.getElementById(`input-fruit${a}`).selectedIndex].label;
+        document.getElementById(`order-f${a}`).textContent = fruit;
+
         totalCarbs = totalCarbs + parseFloat(document.getElementById(`fruit${a}-carbs`).textContent);
         totalProtein = totalProtein + parseFloat(document.getElementById(`fruit${a}-protein`).textContent);
         totalFat = totalFat + parseFloat(document.getElementById(`fruit${a}-fat`).textContent);
@@ -165,7 +134,6 @@ function summary(){
     document.getElementById("order-fat").textContent = totalFat.toFixed(2);
     document.getElementById("order-sugar").textContent = totalSugar.toFixed(2);
     document.getElementById("order-cal").textContent = totalCal.toFixed(2);
-
     // Store the current visit date in local storage
     var qDrinks = parseInt(localStorage.getItem('qDrinks'));
     if (isNaN(qDrinks)){
@@ -176,4 +144,24 @@ function summary(){
     }
 
 }
-
+//EVENT LISTENERS
+document.querySelector("#input-fruit1").addEventListener("change", function() {fruitValue(1)});
+document.querySelector("#input-fruit2").addEventListener("change", function() {fruitValue(2)});
+document.querySelector("#input-fruit3").addEventListener("change", function() {fruitValue(3)});
+document.getElementById('button').addEventListener('click', () => {
+    if (validate() == 0){
+        document.getElementById('fs5').classList.replace('active','hidden');
+        if (document.getElementById('fs4').classList == 'active'){
+            document.getElementById('fs4').classList.replace('active','hidden');
+        }else{
+            document.getElementById('fs4').classList.replace('hidden','active');
+            summary();
+        }
+    }else{
+        if (document.getElementById('fs5').classList != 'active'){
+            document.getElementById('fs5').classList.replace('hidden','active');
+        }
+    }
+}, false);
+//EXECUTE
+getFruitData();

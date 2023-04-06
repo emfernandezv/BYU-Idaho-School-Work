@@ -1,64 +1,58 @@
-
-async function getCompanyData(){
+// FETCH PARTNERS DATA
+async function getPartnersData(){
     const response = await fetch("data.json");
     const data = await response.json();
-    displayCompanies(data.companies)
-
+    displayPartners(data.partners)
 }
-getCompanyData();
-
-const displayCompanies = (companies) => {
+// DISPLAY PARTNERS
+const displayPartners = (partners) => {
     const cards = document.querySelector("div.cards");
-    companies.forEach((company) => {
+    partners.forEach((partner) => {
+        //CREATING OBJECTS
         let card = document.createElement("section");
         let h3 = document.createElement("h2");
         let logo = document.createElement("img");
         let address = document.createElement("p")
         let phone =  document.createElement("p");
         let url =  document.createElement("a");
-
-        h3.textContent = `${company.name}`;
-        address.textContent = `${company.address}`;
-        phone.textContent = `${company.phone}`;
+        //POPULATING OBJECTS
+        h3.textContent = `${partner.name}`;
+        address.textContent = `${partner.address}`;
+        phone.textContent = `${partner.phone}`;
         logo.setAttribute("class", 'cardimg');
-        logo.setAttribute("src", company.image);
-        logo.setAttribute("alt", `${company.name}'s Logo`);
+        logo.setAttribute("src", partner.image);
+        logo.setAttribute("alt", `${partner.name}'s Logo`);
         logo.setAttribute("loading", "lazy");
-        url.setAttribute("href", company.websiteurl)
+        url.setAttribute("href", partner.websiteurl)
         url.textContent = `Website`
         address.setAttribute("id","address")
         phone.setAttribute("id","phone")
-        
+        //APPENDING OBJECTS
         card.appendChild(logo);
         card.appendChild(h3)
         card.appendChild(address);
         card.append(phone);
         card.appendChild(url);
-
         cards.appendChild(card);
-        
     })
 }
-
-const gridbutton = document.querySelector("#gridview");
-const listbutton = document.querySelector("#listview");
+//CARDS / LIST HANDLER
 const cards = document.querySelector(".cards");
-
-
-document.querySelector("#gridview").addEventListener("click", showGrid);
-
-document.querySelector("#listview").addEventListener("click", showList); 
-
 function showGrid(){
     cards.classList.add("cards");
 	cards.classList.remove("list");
-    gridbutton.classList.add("active")
-    listbutton.classList.remove("active")
+    document.querySelector("#gridview").classList.add("active")
+    document.querySelector("#listview").classList.remove("active")
 }
 
 function showList() {
 	cards.classList.add("list");
 	cards.classList.remove("cards");
-    gridbutton.classList.remove("active")
-    listbutton.classList.add("active")
+    document.querySelector("#gridview").classList.remove("active")
+    document.querySelector("#listview").classList.add("active")
 }
+// EVENT LISTENERS
+document.querySelector("#gridview").addEventListener("click", showGrid);
+document.querySelector("#listview").addEventListener("click", showList); 
+//EXECUTE FUNCTIONS
+getPartnersData();
