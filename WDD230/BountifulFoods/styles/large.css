@@ -92,10 +92,7 @@
     #main-partners #opportunities p{
         font-size: var(--font-size-parragraph);
     }
-    #main-partners section h3{
-        font-size: var(--font-size-h3);
-        
-    }
+
     /*FRESH*/
     #main-fresh form .fsclass{
         font-size: 0.95vw;
