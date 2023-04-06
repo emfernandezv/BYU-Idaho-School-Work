@@ -429,6 +429,9 @@ html {
     font-weight: 200;
     font-size: var(--font-size-parragraph);
 }
+#main-home #explore #exploreimg{
+    margin-bottom: 1em;
+}
 #main-home .lititle{
     list-style: none;
     font-size: var(--font-size-parragraph);
