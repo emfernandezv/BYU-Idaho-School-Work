@@ -1,10 +1,3 @@
-// select HTML elements in the document
-const currentTemp = document.getElementById('grade');
-const weatherIcon = document.getElementById('weatherimg');
-const captionDesc = document.getElementById('weatherdesc');
-const humidityVal = document.getElementById("humidityvalue")
-
-
 const url =   "https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&appid=df316398a3c9e783d731138fffc20584&units=imperial"
 
 async function apiFetch() {
@@ -41,44 +34,44 @@ apiFetch();
 apiForecastFetch();
 
 function displayForecast(forecast){
+    let today = new Date();
+    today.setMinutes(0);
+    today.setSeconds(0);
+    let currentTime = today.getHours();
+    today.setDate(today.getDate() + 1);
+    // to retrieve the forecast for the next day on the next time range
+    do{
+        currentTime = currentTime + 1
+    }
+    while (currentTime%3!=0);
+    today.setHours(currentTime);
 
-    //getting mid day forecast day 1 [10]
-    let d1Date = weekDay(new Date(forecast.list[10].dt_txt).getDay());
-    let d1Temp = forecast.list[10].main.temp;
-    let d1Desc = forecast.list[10].weather[0].description.toUpperCase();
-    let d1Img = `https://openweathermap.org/img/w/${forecast.list[2].weather[0].icon}.png`;
-
-    document.getElementById('fc1Img').setAttribute('src', d1Img);
-    document.getElementById('fc1Img').setAttribute('alt', d1Desc.toUpperCase());
-    document.getElementById('fc1Desc').innerText = d1Desc;
-    document.getElementById('fc1Grade').innerText = d1Temp;
-    document.getElementById('fc1Date').innerText = d1Date;
-
-    //getting mid day forecast day 2 [18]
-    let d2Date = weekDay(new Date(forecast.list[18].dt_txt).getDay());
-    let d2Temp = forecast.list[18].main.temp;
-    let d2Desc = forecast.list[18].weather[0].description.toUpperCase();
-    let d2Img = `https://openweathermap.org/img/w/${forecast.list[10].weather[0].icon}.png`;
-
-    document.getElementById('fc2Img').setAttribute('src', d2Img);
-    document.getElementById('fc2Img').setAttribute('alt', d2Desc.toUpperCase());
-    document.getElementById('fc2Desc').innerText = d2Desc;
-    document.getElementById('fc2Grade').innerText = d2Temp;
-    document.getElementById('fc2Date').innerText = d2Date;
-
-    //getting mid day forecast day 3 [26]
-    let d3Date = weekDay(new Date(forecast.list[26].dt_txt).getDay());
-    let d3Temp = forecast.list[26].main.temp;
-    let d3Desc = forecast.list[26].weather[0].description.toUpperCase();
-    let d3Img = `https://openweathermap.org/img/w/${forecast.list[18].weather[0].icon}.png`;
-
-    document.getElementById('fc3Img').setAttribute('src', d3Img);
-    document.getElementById('fc3Img').setAttribute('alt', d3Desc.toUpperCase());
-    document.getElementById('fc3Desc').innerText = d3Desc;
-    document.getElementById('fc3Grade').innerText = d3Temp;
-    document.getElementById('fc3Date').innerText = d3Date;
+    //To get the index for the 5 days at the time specified above
+    let index=[];
+    for (let x = 0; x < forecast.list.length; x++ ){
+        let compareDate = new Date(forecast.list[x].dt_txt)
+        if(compareDate.getHours() == today.getHours()){
+            index.push(x);
+            today.setDate(today.getDate() + 1);
+        }
+    }
+    // to loop the 3 day forecast
+    for (let i = 0; i < 3; i++ ){
+        //to get the next 3 days index
+        let node = index[i];
+        let date = weekDay(new Date(forecast.list[node].dt_txt).getDay());
+        let temp = parseFloat(forecast.list[node].main.temp).toFixed(2);
+        let desc = forecast.list[node].weather[0].description.toUpperCase();
+        let img = `https://openweathermap.org/img/w/${forecast.list[node].weather[0].icon}.png`;
+        //Setting values
+        document.getElementById(`fc${i+1}Img`).setAttribute('src', img);
+        document.getElementById(`fc${i+1}Img`).setAttribute('alt', desc.toUpperCase());
+        document.getElementById(`fc${i+1}Desc`).innerText = desc;
+        document.getElementById(`fc${i+1}Grade`).innerText = temp;
+        document.getElementById(`fc${i+1}Date`).innerText = date;
+    }
 }
-
+// to determine the weekday in text
 function weekDay(number){
     switch (number){
         case 0: return "SUN";
@@ -102,14 +95,14 @@ function  displayResults(weatherData) {
     const humidity = weatherData.main.humidity.toFixed(0);
 
     //setting the temp
-    currentTemp.innerHTML = `<strong>${temp}</strong>`;
+    document.getElementById('grade').innerHTML = `<strong>${temp}</strong>`;
     //setting the icon
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc.toUpperCase());
+    document.getElementById('weatherimg').setAttribute('src', iconsrc);
+    document.getElementById('weatherimg').setAttribute('alt', desc.toUpperCase());
     //setting descripcion
-    captionDesc.textContent = desc.toUpperCase();
+    document.getElementById('weatherdesc').textContent = desc.toUpperCase();
     //setting humidity
-    humidityVal.innerText = humidity;
+    document.getElementById("humidityvalue").innerText = humidity;
 
 }
 
@@ -123,7 +116,7 @@ if (lastValue > 0) {
     drinksCreated.innerText = "NO";
 }
 
-
+//Slider
 var slidePosition = 0;
 SlideShow();
 
