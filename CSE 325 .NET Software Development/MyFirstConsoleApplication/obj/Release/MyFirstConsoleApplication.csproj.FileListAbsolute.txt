@@ -1,0 +1,8 @@
+C:\Users\eduardo.fernandez\OneDrive - AdvancedMD\Documents\Personal\BYU-Idaho-School-Work\CSE 325 .NET Software Development\MyFirstConsoleApplication\bin\Release\MyFirstConsoleApplication.exe.config
+C:\Users\eduardo.fernandez\OneDrive - AdvancedMD\Documents\Personal\BYU-Idaho-School-Work\CSE 325 .NET Software Development\MyFirstConsoleApplication\bin\Release\MyFirstConsoleApplication.exe
+C:\Users\eduardo.fernandez\OneDrive - AdvancedMD\Documents\Personal\BYU-Idaho-School-Work\CSE 325 .NET Software Development\MyFirstConsoleApplication\bin\Release\MyFirstConsoleApplication.pdb
+C:\Users\eduardo.fernandez\OneDrive - AdvancedMD\Documents\Personal\BYU-Idaho-School-Work\CSE 325 .NET Software Development\MyFirstConsoleApplication\obj\Release\MyFirstConsoleApplication.csproj.AssemblyReference.cache
+C:\Users\eduardo.fernandez\OneDrive - AdvancedMD\Documents\Personal\BYU-Idaho-School-Work\CSE 325 .NET Software Development\MyFirstConsoleApplication\obj\Release\MyFirstConsoleApplication.csproj.SuggestedBindingRedirects.cache
+C:\Users\eduardo.fernandez\OneDrive - AdvancedMD\Documents\Personal\BYU-Idaho-School-Work\CSE 325 .NET Software Development\MyFirstConsoleApplication\obj\Release\MyFirstConsoleApplication.csproj.CoreCompileInputs.cache
+C:\Users\eduardo.fernandez\OneDrive - AdvancedMD\Documents\Personal\BYU-Idaho-School-Work\CSE 325 .NET Software Development\MyFirstConsoleApplication\obj\Release\MyFirstConsoleApplication.exe
+C:\Users\eduardo.fernandez\OneDrive - AdvancedMD\Documents\Personal\BYU-Idaho-School-Work\CSE 325 .NET Software Development\MyFirstConsoleApplication\obj\Release\MyFirstConsoleApplication.pdb
